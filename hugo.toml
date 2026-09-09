@@ -1,0 +1,74 @@
+baseURL = "/"
+title = "Semantic Documentation"
+
+# 内容目录：沿用现有 docs/ 作为 content 根
+contentDir = "docs"
+
+defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+# 页面显示"最后修改时间"（来自 git 提交记录）
+enableGitInfo = true
+
+# 关闭分类法
+disableKinds = ["taxonomy"]
+
+[params]
+  copyright = "© 2026 具识智能"
+  privacy_policy = ""
+  # GitHub 集成（"编辑此页/提交文档问题/添加子页面"，Docsy 内置）。
+  # 组织 slug 定版后取消注释并替换 <ORG> 即可全站生效；同时全仓搜索 <ORG> 完成收尾。
+  # github_repo = "https://github.com/<ORG>/semantic-docs"
+  # github_subdir = ""
+  # github_branch = "main"
+  # github_project_repo = "https://github.com/<ORG>/semantic-docs"
+  # github_issue_repo = "https://github.com/<ORG>/semantic-docs"
+  # 离线/本地搜索
+  offlineSearch = true
+  # 右栏"本页目录"；侧边栏折叠导航（Eino 式 ▾ 展开/收起）
+  ui = { breadcrumb_disable = false, sidebar_menu_compact = false, sidebar_search_disable = false, sidebar_menu_foldable = true }
+  # 阅读时间
+  readingtime = { enable = false }
+
+# 顶部导航
+[[menu.main]]
+  name = "架构"
+  weight = 10
+  url = "/architecture/"
+[[menu.main]]
+  name = "用户手册"
+  weight = 20
+  url = "/user/"
+[[menu.main]]
+  name = "开发者文档"
+  weight = 30
+  url = "/developer/"
+[[menu.main]]
+  name = "发布记录"
+  weight = 40
+  url = "/releases/"
+
+[module]
+  [[module.imports]]
+    path = "github.com/google/docsy"
+    disable = false
+  [[module.imports]]
+    path = "github.com/google/docsy/dependencies"
+    disable = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser.attribute]
+      block = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "github"
+
+# mermaid：```mermaid 代码块由前端渲染；已本地化到 assets/vendor/mermaid/（UMD 单文件，
+# 不依赖 CDN）。加载与升级方式见 layouts/partials/scripts/mermaid.html 头部注释。
+[outputs]
+  home = ["HTML", "RSS", "SEARCHINDEX"]

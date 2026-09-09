@@ -1,0 +1,19 @@
+{
+  "name": "semantic-docs",
+  "version": "0.5.0-dev",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "postinstall": "node scripts/install-hugo.js",
+    "docs:dev": "hugo server --bind 0.0.0.0 --buildDrafts --disableFastRender",
+    "docs:build": "hugo --minify --gc",
+    "docs:preview": "hugo server --bind 0.0.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.28",
+    "postcss-cli": "^11.0.1"
+  }
+}

@@ -1,0 +1,27 @@
+{{- /* 覆盖 Docsy 的 assets/json/offline-search-index.json：CJK 索引分词。 */ -}}
+{{- /* 问题：lunr 默认按空白/标点分词，整句中文成为一个 token，无法子串命中。 */ -}}
+{{- /* 方案：把每个连续 CJK 片段（含其内部分隔符）用 \001...\002 包裹成一个
+       “CJK 区域”token；查询端用自定义 tokenizer 保留该区域，并追加前导通配符
+       查询，即可命中区域内任意二字及以上子串（如搜“周转运箱”命中“…的周转运箱…”）。 */ -}}
+{{- $.Scratch.Add "offline-search-index" slice -}}
+{{- range where .Site.AllPages ".Params.exclude_search" "!=" true -}}
+{{- $body := .Plain | htmlUnescape -}}
+{{- /* 1) 每个 CJK 连续片段用 \001...\002 包裹（CJK 字符用显式 ASCII 八进制区间，
+        避免 Go regexp 对多字节 \x{} 的解析问题） */ -}}
+{{- $body = replaceRE `([一-鿿　-〿＀-￯]+)` `\001${1}\002` $body -}}
+{{- /* 2) 相邻被包裹片段之间只有空白/分隔符时合并为同一区域 */ -}}
+{{- $body = replaceRE `\002[\s\p{P}一-鿿　-〿＀-￯]*\001` `` $body -}}
+{{- $.Scratch.Add
+    "offline-search-index"
+    (dict
+        "ref" .RelPermalink
+        "title" .Title
+        "categories" (.Params.categories | default "")
+        "tags" (.Params.tags | default "")
+        "description" (.Description | default "")
+        "body" $body
+        "excerpt" ((.Description | default .Plain) | htmlUnescape | truncate (.Site.Params.offlineSearchSummaryLength | default 70) | htmlUnescape)
+    )
+-}}
+{{- end -}}
+{{- $.Scratch.Get "offline-search-index" | jsonify -}}
