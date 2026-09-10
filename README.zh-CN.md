@@ -4,6 +4,13 @@
 
 📚 Semantic 的架构、用户指南、开发参考与发布文档。本仓库使用 Hugo / Docsy 构建静态文档站，不运行业务服务；现有正文主要为中文。
 
+## 文档入口
+
+- [架构](docs/architecture/_index.md)
+- [用户手册](docs/user/_index.md)
+- [开发者文档](docs/developer/_index.md)
+- [发布记录](docs/releases/_index.md)
+
 ## 工程结构
 
 - `docs/`：文档正文。
