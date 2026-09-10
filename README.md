@@ -4,6 +4,13 @@
 
 📚 Architecture, user guides, developer references, and release documentation for Semantic. This repository builds a Hugo/Docsy documentation site; it does not run the product services. Most current guide content is Chinese.
 
+## Documentation
+
+- [Architecture](docs/architecture/_index.en.md)
+- [User Guide](docs/user/_index.en.md)
+- [Developer Guide](docs/developer/_index.en.md)
+- [Releases](docs/releases/_index.en.md)
+
 ## Structure
 
 - `docs/` — documentation content.
