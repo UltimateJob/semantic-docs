@@ -13,9 +13,9 @@ description: "通过 Robot Skill、Ability 和 Robot SDK，把任务编排成动
 
 | 模块 | 解决的问题 | 典型产物 |
 |---|---|---|
-| [Robot Skill](/developer/core-modules/robot/robot-skill/) | 一类物理任务怎么分阶段执行 | `SKILL.md`、Stage、Input/State/Result |
-| [Ability](/developer/core-modules/robot/ability/) | 一个原子动作怎么执行 | Manifest、Task Model、Handler |
-| [Robot SDK](/developer/core-modules/robot/robot-sdk/) | 怎么接入新设备或新 Backend | Backend、Provider、型号包 |
+| [Robot Skill](robot-skill.md) | 一类物理任务怎么分阶段执行 | `SKILL.md`、Stage、Input/State/Result |
+| [Ability](ability.md) | 一个原子动作怎么执行 | Manifest、Task Model、Handler |
+| [Robot SDK](robot-sdk.md) | 怎么接入新设备或新 Backend | Backend、Provider、型号包 |
 
 ## 调用链
 
@@ -175,8 +175,8 @@ make build
 
 ## 深入阅读
 
-- [Robot Skill](/developer/core-modules/robot/robot-skill/)；
-- [Ability](/developer/core-modules/robot/ability/)；
-- [Robot SDK 与新型号接入](/developer/core-modules/robot/robot-sdk/)；
-- [第五章：Robot Skill、Stage 与 Action](/developer/quickstart/chapter_05_robot_skill/)；
-- [第六章：Ability、Handler 与 Robot SDK](/developer/quickstart/chapter_06_ability_sdk/)。
+- [Robot Skill](robot-skill.md)；
+- [Ability](ability.md)；
+- [Robot SDK 与新型号接入](robot-sdk.md)；
+- [第五章：Robot Skill、Stage 与 Action](../../quickstart/chapter_05_robot_skill.md)；
+- [第六章：Ability、Handler 与 Robot SDK](../../quickstart/chapter_06_ability_sdk.md)。

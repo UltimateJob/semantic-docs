@@ -66,7 +66,11 @@ Manual debugging and formal Tasks produce the same kind of Robot Execution. The 
 
 ![Execution run logs](../../../static/images/user/getting-started/execution-logs.png)
 
-The Logs tab shows Skill, model, tool, Execution, and Trace records. It helps distinguish “Skill did not start”, “Action was sent but Ability did not return”, “model planning was wrong”, and “physical execution was safely stopped”.
+The Logs tab shows Skill, model, tool, Execution, and Trace records. It helps distinguish “Skill did not start”, “Action was sent but Ability did not return”, “model planning was wrong”, and “physical execution was safely stopped”. The screenshot shows the key grasp-stage actions: `gripper.close`, then `robot.verify_tool_load` confirming the load, then `perception.verify_grasp` verifying the grasp, ending in a no-slip dual-side stable carry.
+
+When Execution cannot advance, it waits for an Agent decision and gives a concrete reason. The next screenshot is another real case: there is no reachable grasp candidate from the current chassis pose, so the approach pose must be adjusted and the scene observed again.
+
+![Execution waiting for Agent decision](../../../static/images/user/getting-started/robot-execution-waiting-agent.png)
 
 ## Safe stop
 

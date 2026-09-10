@@ -99,7 +99,7 @@ Store（`internal/skill/store.go`）挂载 fsnotify 监听，文件变更经 500
 
 ## 授权：让 Agent 能看到 Skill
 
-Skill 加载进 Server 不等于 Agent 能使用它。授权链由 Agent Profile 控制（Profile 完整字段见 [Agent 角色与 Team](/developer/core-modules/intelligent/agent-profile/)）：
+Skill 加载进 Server 不等于 Agent 能使用它。授权链由 Agent Profile 控制（Profile 完整字段见 [Agent 角色与 Team](agent-profile.md)）：
 
 **role.yaml 的 `skills.allowlist` 是硬边界（空 = 不使用 Skill）**，Project 级绑定只能继续收窄（交集）。Agent 实际可见的 Skill = allowlist ∩ Project 绑定。
 
@@ -305,6 +305,6 @@ curl -s http://127.0.0.1:8080/api/v1/agents -H "Authorization: Bearer $TOKEN"
 Agent Skill 与 Robot Skill 是两套体系：
 
 - **Agent Skill**（本文）：`internal/skill`，SKILL.md 渐进披露，指导 Agent 的领域方法；
-- **Robot Skill**：见 [Robot Skill](/developer/core-modules/robot/robot-skill/)，由 Pilot 下发到 Robot 上执行的阶段化物理任务。
+- **Robot Skill**：见 [Robot Skill](../robot/robot-skill.md)，由 Pilot 下发到 Robot 上执行的阶段化物理任务。
 
 `plan.suggest` 参数中的 `allowed_skills / required_capabilities` 指 Robot Skill，与 Agent Skill allowlist 无关。

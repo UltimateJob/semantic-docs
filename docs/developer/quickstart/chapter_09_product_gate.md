@@ -157,7 +157,7 @@ Server
 
 后续开发请进入：
 
-- [核心模块](/developer/core-modules/)：学习完整扩展契约；
-- [Cookbook](/developer/cookbook/)：查找真实示例；
-- [组件集成](/developer/integration/)：接入具体实现；
-- [参考](/developer/reference/)：构建、测试、协议和内部机制。
+- [核心模块](../core-modules/_index.md)：学习完整扩展契约；
+- [Cookbook](../cookbook/_index.md)：查找真实示例；
+- [组件集成](../integration/_index.md)：接入具体实现；
+- [参考](../reference/_index.md)：构建、测试、协议和内部机制。

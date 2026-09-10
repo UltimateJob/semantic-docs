@@ -12,10 +12,10 @@ description: "使用 quick-start、构建测试、Runtime Pack、Robot Bundle �
 | 工具 | 作用 | 入口 |
 |---|---|---|
 | `quick-start` | 多仓安装、配置和启动编排 | `quick-start/semantic_installer.py` |
-| Build / Test | 各仓静态检查、单元、合同和集成测试 | [构建与测试](/developer/reference/build/) |
-| Runtime Pack | 固定 Runtime 和离线依赖的发布包 | [仿真集成](/developer/integration/simulation/) |
-| Robot Bundle | Pilot、Ability、SDK 和 Skill SDK 的装配包 | [设备部署与加入](/developer/integration/device/deployment/) |
-| Product Gate | Fake、MuJoCo 和真实模型的完整产品验证 | [端到端集成](/developer/integration/end-to-end/) |
+| Build / Test | 各仓静态检查、单元、合同和集成测试 | [构建与测试](../../reference/build/_index.md) |
+| Runtime Pack | 固定 Runtime 和离线依赖的发布包 | [仿真集成](../../integration/simulation/_index.md) |
+| Robot Bundle | Pilot、Ability、SDK 和 Skill SDK 的装配包 | [设备部署与加入](../../integration/device/deployment.md) |
+| Product Gate | Fake、MuJoCo 和真实模型的完整产品验证 | [端到端集成](../../integration/end-to-end/_index.md) |
 
 ## 开发闭环
 
@@ -38,4 +38,4 @@ description: "使用 quick-start、构建测试、Runtime Pack、Robot Bundle �
 - Studio 修改：Vitest、Playwright 和 Server 联调；
 - 跨仓产品修改：执行对应 Product Gate。
 
-完整命令和各仓 CI 能力见[构建、运行与测试](/developer/reference/build/build-run-and-test/)和[CI 与发布流程](/developer/reference/contributing/ci-and-release/)。
+完整命令和各仓 CI 能力见[构建、运行与测试](../../reference/build/build-run-and-test.md)和[CI 与发布流程](../../reference/contributing/ci-and-release.md)。

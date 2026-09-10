@@ -338,12 +338,12 @@ flag 定义来源：`cmd/semantic-robot-instance/main.go` 的 `start` 子命令�
 
 ## 常见问题
 
-- **启动报"实例已由另一个 semantic-robot-instance 进程管理"**：同一实例目录的 `run/instance.lock` 被常驻实例或 debug-stack 持有，一台 Robot 不能同时被两个进程控制。先 `stop --instance <目录> --timeout 30s` 安全停止，再重新启动；详见[开发者 FAQ](/developer/faq/)「设备加入」与第 6 章的 debug-stack 说明；
+- **启动报"实例已由另一个 semantic-robot-instance 进程管理"**：同一实例目录的 `run/instance.lock` 被常驻实例或 debug-stack 持有，一台 Robot 不能同时被两个进程控制。先 `stop --instance <目录> --timeout 30s` 安全停止，再重新启动；详见[开发者 FAQ](../faq/_index.md)「设备加入」与第 6 章的 debug-stack 说明；
 - **报"claim Pilot 加入码失败: HTTP 409"或 Server 返回"加入码不存在、已使用或已过期"**：加入码五分钟过期且只能领取一次（来源：`internal/robot/enrollment.go`、`handlers/robots.go` 的 `PILOT_ENROLLMENT_INVALID`）。回到设备中心重新点击"添加 Pilot"生成新码；注意错误也可能来自 `pilot_id` 与已有 `connection.yaml` 不一致——保留实例目录但换了配置中的 `robot.id` 时会触发，修正 `--config` 或换新的数据目录；
-- **heartbeat 一直等不到（AF 起来了但七个实例不齐）**：先确认 `curl` 的端口与 `--config` 中 `ability_framework.endpoint` 一致；MuJoCo 类型包的 Ability 依赖 SDK endpoint——`robot.sdk.endpoint` 必须指向第 2 章已运行的 Runtime（示例为 `http://127.0.0.1:18090`），SDK 不通时 Ability 进程无法进入 `running`；查看 `ability-framework/log/process.log` 与启动器输出中"启动 Ability …"的具体 role 定位卡住的环节；更多排查见[开发者 FAQ](/developer/faq/)「`GET /api/ability-heartbeat` 没有数据」条目；
+- **heartbeat 一直等不到（AF 起来了但七个实例不齐）**：先确认 `curl` 的端口与 `--config` 中 `ability_framework.endpoint` 一致；MuJoCo 类型包的 Ability 依赖 SDK endpoint——`robot.sdk.endpoint` 必须指向第 2 章已运行的 Runtime（示例为 `http://127.0.0.1:18090`），SDK 不通时 Ability 进程无法进入 `running`；查看 `ability-framework/log/process.log` 与启动器输出中"启动 Ability …"的具体 role 定位卡住的环节；更多排查见[开发者 FAQ](../faq/_index.md)「`GET /api/ability-heartbeat` 没有数据」条目；
 - **报"局域网内未发现 Semantic Server"**：mDNS 扫描 2 秒未发现服务（来源：`internal/instance/discovery.go`）。显式补上 `--server-http http://127.0.0.1:8080 --server-ws ws://127.0.0.1:8081/ws/pilot`（两参数必须同时提供）；发现多个 Server 时也要求显式指定；
-- **设备中心一直显示 Pilot 未上线 / Skill 不安装**： Pilot 未上线先看实例目录 `pilot/logs/pilot.log` 是否报 credential 或地址错误（`--server-ws` 应为 `ws://<host>:8081/ws/pilot`，与 Server 的 WS 端口一致）；Skill 不安装确认 `robot_skills` 声明的版本已在 Server Registry 发布（第 5 章），版本写错时对账会停在 failed，不会自动换版本重试；详见[开发者 FAQ](/developer/faq/)「设备中心一直提示"Pilot 尚未上线"」条目；
-- **端口冲突**：`ability_framework.endpoint` 的端口（示例 18083）是本实例独占的，两台 Robot 共用同一 SDK endpoint（18090）但 AF 端口必须不同；启动前确认端口未被占用，改端口时同步修改 `--config` 后重新 `start`。Server 侧端口占用见[开发者 FAQ](/developer/faq/)「8090 端口被占用」条目的处理方式。
+- **设备中心一直显示 Pilot 未上线 / Skill 不安装**： Pilot 未上线先看实例目录 `pilot/logs/pilot.log` 是否报 credential 或地址错误（`--server-ws` 应为 `ws://<host>:8081/ws/pilot`，与 Server 的 WS 端口一致）；Skill 不安装确认 `robot_skills` 声明的版本已在 Server Registry 发布（第 5 章），版本写错时对账会停在 failed，不会自动换版本重试；详见[开发者 FAQ](../faq/_index.md)「设备中心一直提示"Pilot 尚未上线"」条目；
+- **端口冲突**：`ability_framework.endpoint` 的端口（示例 18083）是本实例独占的，两台 Robot 共用同一 SDK endpoint（18090）但 AF 端口必须不同；启动前确认端口未被占用，改端口时同步修改 `--config` 后重新 `start`。Server 侧端口占用见[开发者 FAQ](../faq/_index.md)「8090 端口被占用」条目的处理方式。
 
 ## 本章小结
 
@@ -355,4 +355,4 @@ flag 定义来源：`cmd/semantic-robot-instance/main.go` 的 `start` 子命令�
 
 ## 下一章
 
-进入[第 8 章：Studio、事件流与执行观察](/developer/quickstart/chapter_08_studio/)，在 Studio 中观察这台设备的完整执行过程。
+进入[第 8 章：Studio、事件流与执行观察](chapter_08_studio.md)，在 Studio 中观察这台设备的完整执行过程。

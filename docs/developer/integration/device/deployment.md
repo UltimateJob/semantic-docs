@@ -40,5 +40,5 @@ Bundle 组装已通过测试的 Pilot、AbilityFramework、Robot SDK Wheel、Abi
 ## 相关文档
 
 - 类型包和构建命令：`semantic-robot-deployment/type-packages/`；
-- SDK、Ability、Skill 的开发入口见[设备集成](/developer/integration/device/)；
-- 端到端验证见[集成指南](/developer/integration/)。
+- SDK、Ability、Skill 的开发入口见[设备集成](_index.md)；
+- 端到端验证见[集成指南](../_index.md)。

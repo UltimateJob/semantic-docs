@@ -29,13 +29,13 @@ Agent 理解目标
 
 | 我想做什么 | 进入 | 结果 |
 |---|---|---|
-| 了解 Semantic 是什么 | [概述](/developer/overview/) | 理解框架定位、执行链和仓库边界 |
-| 从零运行一个示例 | [快速开始](/developer/quickstart/) | 从工作区逐步构建到产品链验证 |
-| 找现成的可运行代码 | [Cookbook](/developer/cookbook/) | 按开发场景查找真实示例 |
-| 学习框架核心抽象 | [核心模块](/developer/core-modules/) | 理解 Agent、Workflow、Robot 和 Runtime |
-| 接入具体实现 | [组件集成](/developer/integration/) | 连接模型、工具、设备和环境 |
-| 升级或发布版本 | [发布记录与迁移](/developer/releases/) | 查看兼容矩阵和迁移步骤 |
-| 解决具体错误 | [FAQ](/developer/faq/) | 按现象定位根因和处理方式 |
+| 了解 Semantic 是什么 | [概述](overview/_index.md) | 理解框架定位、执行链和仓库边界 |
+| 从零运行一个示例 | [快速开始](quickstart/_index.md) | 从工作区逐步构建到产品链验证 |
+| 找现成的可运行代码 | [Cookbook](cookbook/_index.md) | 按开发场景查找真实示例 |
+| 学习框架核心抽象 | [核心模块](core-modules/_index.md) | 理解 Agent、Workflow、Robot 和 Runtime |
+| 接入具体实现 | [组件集成](integration/_index.md) | 连接模型、工具、设备和环境 |
+| 升级或发布版本 | [发布记录与迁移](../releases/_index.md) | 查看兼容矩阵和迁移步骤 |
+| 解决具体错误 | [FAQ](faq/_index.md) | 按现象定位根因和处理方式 |
 
 ## 核心模块
 
@@ -50,4 +50,8 @@ Semantic 的核心模块按照开发者需要解决的问题划分：
 
 ## 贡献入口
 
-核心实现、测试、构建和发布规范见[参考](/developer/reference/)。跨仓修改前先阅读[贡献与发布](/developer/reference/contributing/)。
+核心实现、测试、构建和发布规范见[参考](reference/_index.md)。跨仓修改前先阅读[贡献与发布](reference/contributing/_index.md)。
+
+## GitHub / GitLab 阅读说明
+
+仓库内的文档链接统一使用相对的 `.md` 文件路径，保证在 GitHub 和 GitLab 源码页可以直接跳转。Hugo 文档站构建时会通过链接渲染钩子自动转换为部署后的页面 URL。若源码页仍出现 404，请先确认当前分支是否已包含目标文件。

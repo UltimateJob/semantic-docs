@@ -7,11 +7,11 @@ description: "Semantic 的跨组件协议、认证、事件、配置契约和版
 
 本节是协议和配置的入口。当前文档按实现边界提供稳定的协议概览；涉及具体字段时，应同时以对应仓库的类型、Manifest、路由或 Schema 为准。
 
-- [组件接口与事件](/developer/integration/component-interfaces-and-events/)：HTTP、WebSocket、Worker JSON-RPC、Action 和 Robot SDK 的边界；
-- [Agent 角色与 Team](/developer/core-modules/intelligent/agent-profile/)：`role.yaml`、Tool/Skill 授权和 Team；
-- [Scene Package 与仿真 Runtime](/developer/core-modules/environment/scene-and-runtime/)：Scene、Runtime Profile 和虚拟 Robot；
-- [Ability](/developer/core-modules/robot/ability/)：Manifest、Task Model、Action 类型和 Schema 版本；
-- [Studio 前端架构](/developer/reference/internals/semantic-studio/)：REST、WebSocket、Store 和事件续传。
+- [组件接口与事件](protocols.md)：HTTP、WebSocket、Worker JSON-RPC、Action 和 Robot SDK 的边界；
+- [Agent 角色与 Team](../../core-modules/intelligent/agent-profile.md)：`role.yaml`、Tool/Skill 授权和 Team；
+- [Scene Package 与仿真 Runtime](../../core-modules/environment/scene-and-runtime.md)：Scene、Runtime Profile 和虚拟 Robot；
+- [Ability](../../core-modules/robot/ability.md)：Manifest、Task Model、Action 类型和 Schema 版本；
+- [Studio 前端架构](../internals/semantic-studio.md)：REST、WebSocket、Store 和事件续传。
 
 ## 协议参考的共同要求
 

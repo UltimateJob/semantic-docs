@@ -426,4 +426,4 @@ API（方式 B）：
 
 ## 下一章
 
-进入[第五章：Robot Skill、Stage 与 Action](/developer/quickstart/chapter_05_robot_skill/)，让一个 Robot SubTask 进入物理执行。
+进入[第五章：Robot Skill、Stage 与 Action](chapter_05_robot_skill.md)，让一个 Robot SubTask 进入物理执行。

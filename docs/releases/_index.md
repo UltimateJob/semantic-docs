@@ -17,10 +17,10 @@ description: "Semantic 产品和各组件的版本变化、兼容矩阵与迁移
 
 ## 发布记录
 
-- [v0.5.0（开发中）](/releases/v0.5.0/)：受管 MuJoCo Robot 生命周期、Robot Skill 人工调试、拆码垛产品链与 v050 Gate 工具链。
-- [v0.4.0](/releases/v0.4.0/)：MuJoCo 仿真工作台、Runtime Pack 与 Scene 资产体系。
-- [v0.3.0](/releases/v0.3.0/)：显式 Plan Mode、Workflow/Task/SubTask 计划域与内置 Semantic Map。
-- [v0.2.0](/releases/v0.2.0/)：首个公开基座。
+- [v0.5.0（开发中）](v0.5.0.md)：受管 MuJoCo Robot 生命周期、Robot Skill 人工调试、拆码垛产品链与 v050 Gate 工具链。
+- [v0.4.0](v0.4.0.md)：MuJoCo 仿真工作台、Runtime Pack 与 Scene 资产体系。
+- [v0.3.0](v0.3.0.md)：显式 Plan Mode、Workflow/Task/SubTask 计划域与内置 Semantic Map。
+- [v0.2.0](v0.2.0.md)：首个公开基座。
 
 > v0.3.0 及更早版本有 Framework/Web tag 可考；v0.4.0 与 v0.5.0 的版本边界基于 git 历史与版本元数据提交重建，发布前需负责人确认。
 

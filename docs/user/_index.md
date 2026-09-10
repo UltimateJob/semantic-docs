@@ -36,17 +36,18 @@ flowchart LR
 ## 推荐阅读顺序
 
 1. [安装与启动](getting-started/install-and-start.md)：启动 Server、Web 和必要的仿真 Runtime。
-2. [最佳实践：从 Project 到规划](getting-started/best-practice.md)：按截图完成一条完整、可复现的默认流程。
-3. [Project 与 Semantic Studio](workspace/project-and-studio.md)：理解前端页面结构、每个区域的作用和主要操作流。
-4. [Conversation、Agent 与 Interaction](collaboration/conversation-agents-and-interactions.md)：学会向 Agent 描述目标、回答追问和理解协作结果。
-5. [计划与 Workflow](workflow/planning-and-execution.md)：理解 Plan Proposal、批准执行、暂停、恢复和停止。
-6. [仿真环境](environments/simulation.md)或[连接真实 Robot](environments/real-robot.md)：根据实际运行环境继续深入。
+2. [第一个 Project](getting-started/first-project.md)：完成从打开 Project、批准计划到观察执行结果的完整流程。
+3. [最佳实践：从 Project 到规划](getting-started/best-practice.md)：按截图完成一条完整、可复现的默认流程。
+4. [Project 与 Semantic Studio](workspace/project-and-studio.md)：理解前端页面结构、每个区域的作用和主要操作流。
+5. [Conversation、Agent 与 Interaction](collaboration/conversation-agents-and-interactions.md)：学会向 Agent 描述目标、回答追问和理解协作结果。
+6. [计划与 Workflow](workflow/planning-and-execution.md)：理解 Plan Proposal、批准执行、暂停、恢复和停止。
+7. [仿真环境](environments/simulation.md)或[连接真实 Robot](environments/real-robot.md)：根据实际运行环境继续深入。
 
 ## 手册结构
 
 | 部分 | 你会学到什么 |
 |---|---|
-| [快速开始](getting-started/_index.md) | 安装启动、登录和截图版最佳实践 |
+| [快速开始](getting-started/_index.md) | 安装启动、第一个 Project 和截图版最佳实践 |
 | [工作空间](workspace/_index.md) | Project、Semantic Studio 页面结构、前端各区域的作用 |
 | [协作](collaboration/_index.md) | Conversation、Leader、Robot Agent、结构化 Interaction |
 | [计划与执行](workflow/_index.md) | Plan Proposal、Workflow、Task、恢复和停止 |

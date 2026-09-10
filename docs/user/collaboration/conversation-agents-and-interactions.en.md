@@ -13,7 +13,7 @@ The right Conversation panel can stay open beside the scene. You can describe th
 
 The input area provides two main modes:
 
-- **Collaboration**:问答, analysis, discussion, and general tool-using work.
+- **Collaboration**: Q&A, analysis, discussion, and general tool-using work.
 - **Planning**: tasks that may produce physical robot actions. The Agent first creates a Plan Proposal and waits for user review.
 
 ![Collaboration mode conversation](../../../static/images/user/getting-started/collaboration-mode.png)

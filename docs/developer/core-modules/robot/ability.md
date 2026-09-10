@@ -4,9 +4,9 @@ weight: 70
 description: "新增一种机器人原子动作：Ability Manifest、Task Model、Handler 与 Provider。"
 ---
 
-Ability 执行 Robot Skill 发起的 Action。AbilityFramework 根据 Action 类型、Schema 版本、Robot 和 Ability 实例选择可运行实例，并管理调用、Feedback、停止和结果。在执行链上，它位于 Robot Skill 之下、Robot SDK 之上（见[第六章：Ability、Handler 与 Robot SDK](/developer/quickstart/chapter_06_ability_sdk/)）。
+Ability 执行 Robot Skill 发起的 Action。AbilityFramework 根据 Action 类型、Schema 版本、Robot 和 Ability 实例选择可运行实例，并管理调用、Feedback、停止和结果。在执行链上，它位于 Robot Skill 之下、Robot SDK 之上（见[第六章：Ability、Handler 与 Robot SDK](../../quickstart/chapter_06_ability_sdk.md)）。
 
-**什么时候写一个新 Ability**：机器人缺一种原子能力（如一种新的感知原语、一种新的运动原语）时。如果只是组合已有动作完成任务，写 Robot Skill 就够了；如果要接入一整台新机器人，去 [Robot SDK](/developer/core-modules/robot/robot-sdk/)。
+**什么时候写一个新 Ability**：机器人缺一种原子能力（如一种新的感知原语、一种新的运动原语）时。如果只是组合已有动作完成任务，写 Robot Skill 就够了；如果要接入一整台新机器人，去 [Robot SDK](robot-sdk.md)。
 
 ## Ability 包结构
 
@@ -139,6 +139,6 @@ Robot 侧启动顺序固定为 `AbilityFramework → 七类 Ability → semantic
 
 ## 相关参考
 
-- Skill 侧如何声明 Action 依赖：[Robot Skill](/developer/core-modules/robot/robot-skill/) 的 `required_actions`；
-- Handler 落到设备的接口：[Robot SDK](/developer/core-modules/robot/robot-sdk/)；
-- 本地联调环境：[Cookbook](/developer/cookbook/) 的 MuJoCo Skill 调试示例。
+- Skill 侧如何声明 Action 依赖：[Robot Skill](robot-skill.md) 的 `required_actions`；
+- Handler 落到设备的接口：[Robot SDK](robot-sdk.md)；
+- 本地联调环境：[Cookbook](../../cookbook/_index.md) 的 MuJoCo Skill 调试示例。

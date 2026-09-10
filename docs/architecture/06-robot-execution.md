@@ -540,5 +540,5 @@ Robot Agent 启动 `place-object`：
 
 ## 相关层次
 
-- 设计契约与扩展指引：[核心模块 · Robot Skill](/developer/core-modules/robot/robot-skill/)
-- 服务端/前端实现细节：[内部实现 · Pilot 与 Robot Execution](/developer/reference/internals/robot-execution-and-environment/)
+- 设计契约与扩展指引：[核心模块 · Robot Skill](../developer/core-modules/robot/robot-skill.md)
+- 服务端/前端实现细节：[内部实现 · Pilot 与 Robot Execution](../developer/reference/internals/robot-execution-and-environment.md)

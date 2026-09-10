@@ -233,5 +233,5 @@ Project 在整个过程中保持应用、环境、协作和运行的连续关系
 
 ## 相关层次
 
-- 设计契约与扩展指引：[核心模块 · Studio 面板与交互渲染器](/developer/core-modules/interface/studio-panel/)
-- 服务端/前端实现细节：[内部实现 · Studio 前端架构](/developer/reference/internals/semantic-studio/)
+- 设计契约与扩展指引：[核心模块 · Studio 面板与交互渲染器](../developer/core-modules/interface/studio-panel.md)
+- 服务端/前端实现细节：[内部实现 · Studio 前端架构](../developer/reference/internals/semantic-studio.md)

@@ -7,7 +7,7 @@ description: "Semantic Server 的 WebSocket 通道参考：/ws/studio、/ws/chat
 
 本文是 Semantic Server WebSocket 协议的参考。全部消息类型与事件类型提取自 semantic-framework 源码：网关实现在 `internal/server/ws/`（浏览器通道）与 `internal/robot/gateway.go`（Pilot 通道），事件类型常量与发布点分布在 `internal/agent/runtime/`、`internal/workflow/`、`internal/interaction/`、`internal/robot/` 及 handlers 中。与代码不一致时以代码为准。
 
-HTTP REST 端点见 [HTTP API](/developer/reference/api/http/)；协议总览见[组件接口与事件](/developer/reference/api/protocols/)。
+HTTP REST 端点见 [HTTP API](http.md)；协议总览见[组件接口与事件](protocols.md)。
 
 ## 通道总览
 
@@ -347,6 +347,6 @@ Pilot 与 Server 的单一控制通道。控制事件走本通道，Skill 包与
 
 ## 相关参考
 
-- REST 端点与认证：[HTTP API](/developer/reference/api/http/)；
-- Studio 前端如何消费这些事件（dispatcher、store、续传）：[Studio 前端架构](/developer/reference/internals/semantic-studio/)；
-- Pilot 与 Worker 的进程内边界：[组件接口与事件](/developer/reference/api/protocols/)。
+- REST 端点与认证：[HTTP API](http.md)；
+- Studio 前端如何消费这些事件（dispatcher、store、续传）：[Studio 前端架构](../internals/semantic-studio.md)；
+- Pilot 与 Worker 的进程内边界：[组件接口与事件](protocols.md)。

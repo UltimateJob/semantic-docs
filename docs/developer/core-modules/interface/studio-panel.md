@@ -6,7 +6,7 @@ description: "为 Semantic Studio 工作区新增面板与交互渲染器：注�
 
 Semantic Studio 的工作区由可组合的面板（Panel）构成，Conversation 中的结构化消息由可插拔的渲染器（Renderer）呈现。两者都是 `semantic-web` 仓库中面向扩展开发者的注册表式扩展点：**新增一个 Vue 组件并登记，不需要改动现有面板代码**。
 
-Studio 内部架构与状态管理见核心开发部分的 [Studio 前端架构](/developer/reference/internals/semantic-studio/)，本章只讲如何扩展。
+Studio 内部架构与状态管理见核心开发部分的 [Studio 前端架构](../../reference/internals/semantic-studio.md)，本章只讲如何扩展。
 
 ## 新增一个 Studio 面板
 
@@ -90,8 +90,8 @@ const definitions = {
 ## 边界
 
 - Studio 只连接 Server（REST + WebSocket），扩展面板同样不允许直连 Pilot、Runtime 或 Robot；
-- 面板复用现有认证：axios 实例统一注入 Bearer token，401 自动刷新（见 [Studio 前端架构](/developer/reference/internals/semantic-studio/)）。
+- 面板复用现有认证：axios 实例统一注入 Bearer token，401 自动刷新（见 [Studio 前端架构](../../reference/internals/semantic-studio.md)）。
 
 ## 相关层次
 
-- 概念模型：[架构 · Project：具身应用工作空间](/architecture/02-project/)
+- 概念模型：[架构 · Project：具身应用工作空间](../../../architecture/02-project.md)

@@ -5,7 +5,7 @@ description: "Studio 前端架构：状态来源、视图组织、WebSocket 协�
 ---
 
 Semantic Studio 是操作 Project、与 Agent 协作和观察具身运行的 Web 工具。它以 Project 为上下文组织 Conversation、环境、Robot、Workflow 和 Execution。
-如何为 Studio 新增面板见核心模块的 [Studio 面板与交互渲染器](/developer/core-modules/interface/studio-panel/)。
+如何为 Studio 新增面板见核心模块的 [Studio 面板与交互渲染器](../../core-modules/interface/studio-panel.md)。
 
 实现位于 `semantic-web` 仓库：Vue 3 + Pinia + element-plus + dockview（面板布局）+ three（3D Viewer）。
 
@@ -63,8 +63,8 @@ npm run build
 
 代码结构：`src/api/`（按域划分的 axios 模块）、`src/stores/`（Pinia）、`src/views/`、`src/components/`（chat/studio/device/simulation 等）、`src/studio/`（面板注册表、command gateway、map selection）、`src/ws/`（client + dispatcher）。
 
-E2E 覆盖：Proposal 生成和批准、Interaction 回答、Workflow 与 Robot Execution 更新、暂停恢复和安全停止、页面刷新和 WebSocket 重连、Scene Robot 和 Skill 调试。Server 侧联调见 [Server、Agent 与 Workflow](/developer/reference/internals/server-agent-and-workflow/#本地启动)。
+E2E 覆盖：Proposal 生成和批准、Interaction 回答、Workflow 与 Robot Execution 更新、暂停恢复和安全停止、页面刷新和 WebSocket 重连、Scene Robot 和 Skill 调试。Server 侧联调见 [Server、Agent 与 Workflow](server-agent-and-workflow.md#本地启动)。
 
 ## 相关层次
 
-- 概念模型：[架构 · Project：具身应用工作空间](/architecture/02-project/)
+- 概念模型：[架构 · Project：具身应用工作空间](../../../architecture/02-project.md)

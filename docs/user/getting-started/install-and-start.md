@@ -432,4 +432,4 @@ python -B artifacts/smoke_release.py \
 
 ## 下一步
 
-安装并登录成功后，继续阅读[最佳实践：从 Project 到规划](best-practice.md)，按截图完成第一条完整产品流程。若需要理解 Studio 页面结构，继续阅读[Project 与 Semantic Studio](../workspace/project-and-studio.md)。
+安装并登录成功后，继续阅读[第一个 Project](first-project.md) 完成从打开 Project 到观察执行结果的完整流程；界面逐步点击见[最佳实践：从 Project 到规划](best-practice.md)。若需要理解 Studio 页面结构，继续阅读[Project 与 Semantic Studio](../workspace/project-and-studio.md)。

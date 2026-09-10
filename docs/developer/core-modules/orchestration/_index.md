@@ -155,7 +155,7 @@ make test-v050-real-gate
 
 ## 深入阅读
 
-- [任务规划与 Workflow](/architecture/05-planning-and-workflow/)；
-- [Server、Agent 与 Workflow](/developer/reference/internals/server-agent-and-workflow/)；
-- [第四章：Plan Proposal、Workflow 与 Task](/developer/quickstart/chapter_04_workflow/)；
-- [端到端集成](/developer/integration/end-to-end/)。
+- [任务规划与 Workflow](../../../architecture/05-planning-and-workflow.md)；
+- [Server、Agent 与 Workflow](../../reference/internals/server-agent-and-workflow.md)；
+- [第四章：Plan Proposal、Workflow 与 Task](../../quickstart/chapter_04_workflow.md)；
+- [端到端集成](../../integration/end-to-end/_index.md)。

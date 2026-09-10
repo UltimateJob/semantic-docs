@@ -26,7 +26,7 @@ Scene Package（场景资产）
 4. 生成冻结场景目录；
 5. 在 Framework 中登记 Runtime Installation 和 Scene Catalog；
 6. 在 Studio 中启动 Scene，确认虚拟 Robot 可被受管部署；
-7. 按[设备集成](/developer/integration/device/)继续验证 Ability、Pilot 和 Robot Skill。
+7. 按[设备集成](../device/_index.md)继续验证 Ability、Pilot 和 Robot Skill。
 
 ## 关键边界
 
@@ -34,9 +34,9 @@ Runtime 只负责物理生命周期、低层轨迹、Snapshot、Virtual Robot、
 
 ## 阅读路径
 
-- 场景资产和 Runtime 契约：[Scene Package 与仿真 Runtime](/developer/core-modules/environment/scene-and-runtime/)；
-- 五分钟启动：[第 2 章：仿真环境](/developer/quickstart/chapter_02_simulation/)；
-- 跨组件验证：[端到端集成](/developer/integration/end-to-end/)。
+- 场景资产和 Runtime 契约：[Scene Package 与仿真 Runtime](../../core-modules/environment/scene-and-runtime.md)；
+- 五分钟启动：[第 2 章：仿真环境](../../quickstart/chapter_02_simulation.md)；
+- 跨组件验证：[端到端集成](../end-to-end/_index.md)。
 
 ## 验收标准
 

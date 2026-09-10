@@ -4,7 +4,7 @@ weight: 20
 description: "Pilot 与 Robot Execution：设备连接、Skill 下发、Action 路由与环境运行。"
 ---
 
-Robot Execution 连接 Framework 中的 Robot Task 与 Pilot 中的 Robot Skill Worker。环境运行连接 Scene Runtime、Semantic Map 和虚拟 Robot。执行链全貌见[第 9 章：完整产品 Gate](/developer/quickstart/chapter_09_product_gate/)。
+Robot Execution 连接 Framework 中的 Robot Task 与 Pilot 中的 Robot Skill Worker。环境运行连接 Scene Runtime、Semantic Map 和虚拟 Robot。执行链全貌见[第 9 章：完整产品 Gate](../../quickstart/chapter_09_product_gate.md)。
 
 实现位置：`internal/pilot/`（Pilot 进程与 Server 侧编排）、`internal/robot/`（设备与 enrollment）、`internal/simulation/`（Scene 与虚拟 Robot 生命周期）。
 
@@ -28,7 +28,7 @@ Robot Agent robot.run（验证 Robot、Skill 版本与完整输入）
 Pilot 使用专用 credential 连接 Server（`/ws/pilot`，enrollment 签发）并绑定 Robot 身份。它负责：
 
 - 上报 Robot、Ability 和 Robot Skill 实际状态；
-- 安装和启用 desired Robot Skill（ZIP 校验 + `packages/<name>/<version>` + `active/` 符号链接原子切换，见 [Robot Skill](/developer/core-modules/robot/robot-skill/)）；
+- 安装和启用 desired Robot Skill（ZIP 校验 + `packages/<name>/<version>` + `active/` 符号链接原子切换，见 [Robot Skill](../../core-modules/robot/robot-skill.md)）；
 - 启动、停止和观察 Worker；
 - 转发 Action、Feedback、Observation 和 Artifact；
 - 断线恢复后报告当前执行与事件序列位置。
@@ -54,7 +54,7 @@ Server 根据 Pilot、Ability、Skill、Robot 状态和 Task 占用判断 Robot 
 
 ## Scene 与虚拟 Robot
 
-Framework 通过 Runtime Installation 启动 Scene Instance（启动链路见 [Scene Package 与仿真 Runtime](/developer/core-modules/environment/scene-and-runtime/)）。初始 Snapshot 同步到 Semantic Map 后，Runtime 提供虚拟 Robot 描述，Robot Runtime Orchestrator 为每台虚拟 Robot 生成部署配置并启动受管实例（AbilityFramework、Ability、Pilot），使其进入统一 Robot Execution 链路。
+Framework 通过 Runtime Installation 启动 Scene Instance（启动链路见 [Scene Package 与仿真 Runtime](../../core-modules/environment/scene-and-runtime.md)）。初始 Snapshot 同步到 Semantic Map 后，Runtime 提供虚拟 Robot 描述，Robot Runtime Orchestrator 为每台虚拟 Robot 生成部署配置并启动受管实例（AbilityFramework、Ability、Pilot），使其进入统一 Robot Execution 链路。
 
 - 虚拟 Robot 拉起在场景 running 且首个 Map generation 写入之后异步执行（Launcher 内部约 2 分钟完成对账）；
 - Robot Skill 通过 Ability 读取 Runtime 实时状态；Semantic Map 服务 Agent 查询和环境理解。
@@ -70,7 +70,7 @@ Framework 通过 Runtime Installation 启动 Scene Instance（启动链路见 [S
 
 ## 本地调试
 
-- 脱离 Agent 调试单个 Robot Skill：`semantic-pilot skill run`（用法见 [Robot Skill](/developer/core-modules/robot/robot-skill/)）；
+- 脱离 Agent 调试单个 Robot Skill：`semantic-pilot skill run`（用法见 [Robot Skill](../../core-modules/robot/robot-skill.md)）；
 - 调试 Ability 物理链：`semantic-pilot debug-stack`（见 `semantic-framework/examples/mujoco-skill-debug/README.md`）；
 - 独立验证 Scene：直接启动 `plugin-mujoco` 并调用其 HTTP API。
 
@@ -84,4 +84,4 @@ go test ./tests/integration/ -count=1
 
 ## 相关层次
 
-- 概念模型：[架构 · Robot 执行与具身闭环](/architecture/06-robot-execution/)
+- 概念模型：[架构 · Robot 执行与具身闭环](../../../architecture/06-robot-execution.md)

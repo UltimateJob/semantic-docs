@@ -181,36 +181,40 @@ Semantic 为具身应用提供多层扩展入口。每一层对应不同的问�
 
 | 章节 | 回答的问题 |
 |---|---|
-| `01 具身系统如何运行` | 一项具身任务如何在用户、Agent、环境和 Robot 之间形成完整闭环 |
-| `02 Project 与 Studio` | 一项具身应用如何组织资源、协作、开发和运行 |
-| `03 环境、感知与 Semantic Map` | Semantic 如何表达环境，并通过 Feedback 与 Observation 取得当前信息 |
-| `04 Agent 与协作` | Agent 如何理解目标、使用 Skill 和工具，并与用户及其他 Agent 协作 |
-| `05 任务规划与 Workflow` | 用户目标如何形成 Plan、Task、SubTask，并在执行中持续推进 |
-| `06 Robot 执行与具身闭环` | Robot Skill、Ability、Robot SDK 和 Robot 如何完成一次具身行动 |
-| `07 Semantic 扩展模型` | 开发者如何增加 Agent、Skill、Ability、Robot、Backend 和 Scene 能力 |
-| `08 仿真、真机与部署` | 同一套 Semantic 设计如何运行在仿真环境和真实 Robot 上 |
+| [01 具身系统如何运行](01-system-overview.md) | 一项具身任务如何在用户、Agent、环境和 Robot 之间形成完整闭环 |
+| [02 Project 与 Studio](02-project.md) | 一项具身应用如何组织资源、协作、开发和运行 |
+| [03 环境、感知与 Semantic Map](03-environment.md) | Semantic 如何表达环境，并通过 Feedback 与 Observation 取得当前信息 |
+| [04 Agent 与协作](04-agent-and-collaboration.md) | Agent 如何理解目标、使用 Skill 和工具，并与用户及其他 Agent 协作 |
+| [05 任务规划与 Workflow](05-planning-and-workflow.md) | 用户目标如何形成 Plan、Task、SubTask，并在执行中持续推进 |
+| [06 Robot 执行与具身闭环](06-robot-execution.md) | Robot Skill、Ability、Robot SDK 和 Robot 如何完成一次具身行动 |
+| [07 Semantic 扩展模型](07-extension-model.md) | 开发者如何增加 Agent、Skill、Ability、Robot、Backend 和 Scene 能力 |
+| [08 仿真、真机与部署](08-simulation-real-robot-and-deployment.md) | 同一套 Semantic 设计如何运行在仿真环境和真实 Robot 上 |
 
 ## 阅读路径
 
 ### 第一次了解 Semantic
 
-按顺序阅读 `01 → 02 → 03 → 04 → 05 → 06`。这条路径先建立具身系统全景，再进入环境、Agent、任务和 Robot 执行。
+按顺序阅读 [01](01-system-overview.md) → [02](02-project.md) → [03](03-environment.md) → [04](04-agent-and-collaboration.md) → [05](05-planning-and-workflow.md) → [06](06-robot-execution.md)。这条路径先建立具身系统全景，再进入环境、Agent、任务和 Robot 执行。
 
 ### 开发 Agent 与任务应用
 
-阅读 `02 Project 与 Studio`、`03 环境、感知与 Semantic Map`、`04 Agent 与协作`、`05 任务规划与 Workflow` 和 `07 Semantic 扩展模型`。
+阅读 [02 Project 与 Studio](02-project.md)、[03 环境、感知与 Semantic Map](03-environment.md)、[04 Agent 与协作](04-agent-and-collaboration.md)、[05 任务规划与 Workflow](05-planning-and-workflow.md) 和 [07 Semantic 扩展模型](07-extension-model.md)。
 
 ### 开发 Robot 能力
 
-阅读 `03 环境、感知与 Semantic Map`、`06 Robot 执行与具身闭环`、`07 Semantic 扩展模型` 和 `08 仿真、真机与部署`。
+阅读 [03 环境、感知与 Semantic Map](03-environment.md)、[06 Robot 执行与具身闭环](06-robot-execution.md)、[07 Semantic 扩展模型](07-extension-model.md) 和 [08 仿真、真机与部署](08-simulation-real-robot-and-deployment.md)。
 
 ### 部署和运行 Semantic
 
-阅读 `01 具身系统如何运行`、`02 Project 与 Studio`、`06 Robot 执行与具身闭环` 和 `08 仿真、真机与部署`。
+阅读 [01 具身系统如何运行](01-system-overview.md)、[02 Project 与 Studio](02-project.md)、[06 Robot 执行与具身闭环](06-robot-execution.md) 和 [08 仿真、真机与部署](08-simulation-real-robot-and-deployment.md)。
 
 ## 其他文档
 
-- **实现设计**进一步展开 Agent Runtime、Workflow、Pilot、Robot Skill、Ability、Robot SDK、Simulation Runtime 和 Studio 使用的机制与接口。
-- **用户与开发者指南**说明如何创建 Project、配置 Agent、开发 Skill、启动场景、接入 Robot、运行 Workflow 和调试执行。
-- **API 与配置参考**提供接口、事件、模型、Manifest 和配置文件的精确定义。
-- **版本与发布说明**记录各版本的交付范围、兼容关系和运行要求。
+- [用户手册](../user/_index.md)说明如何创建 Project、配置 Agent、启动场景、接入 Robot、运行 Workflow 和调试执行。
+- [开发者文档](../developer/_index.md)说明如何扩展 Agent Skill、Robot Skill、Ability、Robot SDK、Scene 和 Runtime。
+- [接口与配置参考](../developer/reference/api/_index.md)提供接口、事件、模型、Manifest 和配置文件的精确定义。
+- [版本与发布说明](../releases/_index.md)记录各版本的交付范围、兼容关系和运行要求。
+
+## GitHub / GitLab 阅读说明
+
+仓库内的文档链接统一使用相对的 `.md` 文件路径，保证在 GitHub 和 GitLab 源码页可以直接跳转。

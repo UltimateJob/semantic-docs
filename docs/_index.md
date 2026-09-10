@@ -49,3 +49,12 @@ Semantic 将用户目标、环境理解、多个 Agent 的协作和 Robot 的实
 </div>
 
 {{% /blocks/section %}}
+
+## 仓库内阅读
+
+在 GitHub 或 GitLab 打开源码时，使用这些相对路径进入各手册：
+
+- [架构文档](architecture/_index.md)
+- [用户手册](user/_index.md)
+- [开发者文档](developer/_index.md)
+- [发布记录](releases/_index.md)

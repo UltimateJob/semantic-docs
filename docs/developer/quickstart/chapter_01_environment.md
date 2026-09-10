@@ -202,4 +202,4 @@ Semantic 多仓工作区
 
 ## 下一章
 
-进入[第 2 章：Runtime、Scene 与 Virtual Robot](/developer/quickstart/chapter_02_simulation/)，启动一个真实的仿真环境。
+进入[第 2 章：Runtime、Scene 与 Virtual Robot](chapter_02_simulation.md)，启动一个真实的仿真环境。

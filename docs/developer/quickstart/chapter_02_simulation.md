@@ -213,4 +213,4 @@ plugin-mujoco 已启动
 
 ## 下一章
 
-进入[第 3 章：Agent Profile、Model 与 Agent Skill](/developer/quickstart/chapter_03_agent_skill/)，让 Agent 有身份、模型和可授权的知识。
+进入[第 3 章：Agent Profile、Model 与 Agent Skill](chapter_03_agent_skill.md)，让 Agent 有身份、模型和可授权的知识。
