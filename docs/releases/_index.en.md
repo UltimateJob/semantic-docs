@@ -35,4 +35,4 @@ The matrix is inferred from repository git history, version-metadata commits, an
 | v0.4.0 (2026-08-12, TODO(confirm): no tag) | 0.4.0-dev | 0.4.0-dev | baseline in progress | n/a | in progress | in progress | in progress | v0.4 refactor | n/a |
 | v0.5.0-dev (from 2026-08-15, unreleased) | 0.5.0-dev | 0.5.0-dev | 0.5.0.dev0 / 0.5.0.dev0 | 0.4.0 | 0.4.0.dev0 | 0.1.0.dev0 | grasp-object, semantic-navigation, place-object | 0.4.0.dev0 | r1pro-mujoco 0.5.0-dev, r1pro-fake 0.5.0-dev |
 
-See the [Chinese releases index](_index.en.md) for the full evidence notes behind this matrix.
+See the [Chinese releases index](_index.md) for the full evidence notes behind this matrix.
