@@ -5,7 +5,7 @@ weight: 50
 description: "接入 Semantic 的具体实现：模型、工具、Robot Skill、Ability、Robot SDK、Runtime、Scene 和 Studio。"
 ---
 
-组件集成说明**具体实现怎么接入**，不重复解释核心抽象。核心抽象和设计边界见[核心模块](/developer/core-modules/)；现成可运行例子见[Cookbook](/developer/cookbook/)。
+组件集成说明**具体实现怎么接入**，不重复解释核心抽象。核心抽象和设计边界见[核心模块](../core-modules/_index.md)；现成可运行例子见[Cookbook](../cookbook/_index.md)。
 
 ## 集成目录
 
@@ -100,8 +100,8 @@ description: "接入 Semantic 的具体实现：模型、工具、Robot Skill、
 
 ## 相关文档
 
-- [设备集成](/developer/integration/device/)：Pilot、Ability、SDK、Deployment；
-- [仿真集成](/developer/integration/simulation/)：Runtime、Scene、Runtime Installation；
-- [端到端集成](/developer/integration/end-to-end/)：完整产品链验证；
-- [组件接口与事件](/developer/reference/api/protocols/)：协议边界；
-- [Cookbook](/developer/cookbook/)：真实可运行示例。
+- [设备集成](device/_index.md)：Pilot、Ability、SDK、Deployment；
+- [仿真集成](simulation/_index.md)：Runtime、Scene、Runtime Installation；
+- [端到端集成](end-to-end/_index.md)：完整产品链验证；
+- [组件接口与事件](../reference/api/protocols.md)：协议边界；
+- [Cookbook](../cookbook/_index.md)：真实可运行示例。

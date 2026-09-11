@@ -11,9 +11,9 @@ FAQ 按开发者遇到的现象组织，不按代码目录组织。回答问题�
 
 ## 安装与启动
 
-- [构建、运行与测试](/developer/reference/build/build-run-and-test/)；
-- [快速开始](/developer/quickstart/)；
-- [构建与测试](/developer/reference/build/)。
+- [构建、运行与测试](../reference/build/build-run-and-test.md)；
+- [快速开始](../quickstart/_index.md)；
+- [构建与测试](../reference/build/_index.md)。
 
 ## Agent、Tool 与 Workflow
 

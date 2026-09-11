@@ -192,4 +192,4 @@ make test
 
 ## 下一章
 
-进入[第六章：Ability、Handler 与 Robot SDK](/developer/quickstart/chapter_06_ability_sdk/)，把 Action 连接到真实设备实现。
+进入[第六章：Ability、Handler 与 Robot SDK](chapter_06_ability_sdk.md)，把 Action 连接到真实设备实现。

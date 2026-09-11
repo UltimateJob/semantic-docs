@@ -211,4 +211,4 @@ cd "$SEMANTIC/semantic-framework"
 
 ## 下一章
 
-进入[第七章：Pilot、Robot Deployment 与设备加入](/developer/quickstart/chapter_07_device/)，把 Ability 和 SDK 装配为设备实例。
+进入[第七章：Pilot、Robot Deployment 与设备加入](chapter_07_device.md)，把 Ability 和 SDK 装配为设备实例。

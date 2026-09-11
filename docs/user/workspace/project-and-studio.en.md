@@ -64,7 +64,7 @@ Robots, Runtime Installations, and the Robot Skill Registry can serve multiple P
 
 System settings connect model services, show Runtime installation state, and adjust general configuration. On first use, confirm the model service before entering a Project.
 
-![System settings: model service](../../../static/images/user/getting-started/focus-model-settings.png)
+![System settings: model service](../../../static/images/user/getting-started/02-model-settings.png)
 
 The model service page turns the form into Server model endpoints. Tokens are sent only to Server and are not kept in frontend state. Saving hot-reloads the registry.
 
@@ -141,7 +141,7 @@ The Sensors page shows RGB, Depth, and Contact data for checking simulation heal
 
 Conversation is the collaboration surface. Collaboration mode suits discussion; Planning mode suits tasks that may produce robot actions because it first creates a Plan Proposal for review.
 
-![Planning Conversation](../../../static/images/user/getting-started/focus-plan-conversation.png)
+![Planning Conversation](../../../static/images/user/getting-started/09-plan-proposal-ready.png)
 
 A Plan Proposal card usually contains:
 

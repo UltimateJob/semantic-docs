@@ -46,7 +46,7 @@ Runtime 或真机 → Robot SDK → Ability → Robot Skill → Pilot
 
 ## 相关文档
 
-- [设备集成](/developer/integration/device/)；
-- [仿真集成](/developer/integration/simulation/)；
-- [组件接口与事件](/developer/integration/component-interfaces-and-events/)；
-- [Cookbook](/developer/cookbook/)。
+- [设备集成](../device/_index.md)；
+- [仿真集成](../simulation/_index.md)；
+- [组件接口与事件](../../reference/api/protocols.md)；
+- [Cookbook](../../cookbook/_index.md)。

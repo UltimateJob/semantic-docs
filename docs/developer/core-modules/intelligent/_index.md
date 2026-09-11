@@ -13,10 +13,10 @@ description: "让 Agent 获得领域知识、模型服务、外部工具、角�
 
 | 模块 | 解决的问题 | 典型产物 |
 |---|---|---|
-| [Agent Skill](/developer/core-modules/intelligent/agent-skill/) | Agent 如何获得领域知识和工作方法 | `SKILL.md`、references、scripts |
-| [Tool 与 MCP 接入](/developer/core-modules/intelligent/tool-and-mcp/) | Agent 如何查询或操作外部系统 | MCP Server、Go Tool |
-| [Model Provider](/developer/core-modules/intelligent/model-provider/) | Agent Run 使用哪个模型服务 | Provider 配置、密钥环境变量 |
-| [Agent 角色与 Team](/developer/core-modules/intelligent/agent-profile/) | Agent 的身份、权限和协作关系 | `role.yaml`、`AGENT.md`、Team |
+| [Agent Skill](agent-skill.md) | Agent 如何获得领域知识和工作方法 | `SKILL.md`、references、scripts |
+| [Tool 与 MCP 接入](tool-and-mcp.md) | Agent 如何查询或操作外部系统 | MCP Server、Go Tool |
+| [Model Provider](model-provider.md) | Agent Run 使用哪个模型服务 | Provider 配置、密钥环境变量 |
+| [Agent 角色与 Team](agent-profile.md) | Agent 的身份、权限和协作关系 | `role.yaml`、`AGENT.md`、Team |
 
 ## 代码位置
 
@@ -148,8 +148,8 @@ go test ./tests/integration/ -count=1
 
 ## 深入阅读
 
-- [Agent Skill](/developer/core-modules/intelligent/agent-skill/)；
-- [Tool 与 MCP 接入](/developer/core-modules/intelligent/tool-and-mcp/)；
-- [Model Provider](/developer/core-modules/intelligent/model-provider/)；
-- [Agent 角色与 Team](/developer/core-modules/intelligent/agent-profile/)；
-- [第三章：Agent Profile、Model 与 Agent Skill](/developer/quickstart/chapter_03_agent_skill/)。
+- [Agent Skill](agent-skill.md)；
+- [Tool 与 MCP 接入](tool-and-mcp.md)；
+- [Model Provider](model-provider.md)；
+- [Agent 角色与 Team](agent-profile.md)；
+- [第三章：Agent Profile、Model 与 Agent Skill](../../quickstart/chapter_03_agent_skill.md)。

@@ -225,4 +225,4 @@ go test ./tests/integration/ -run TestSkill -count=1
 
 ## 下一章
 
-进入[第四章：Plan Proposal、Workflow 与 Task](/developer/quickstart/chapter_04_workflow/)。
+进入[第四章：Plan Proposal、Workflow 与 Task](chapter_04_workflow.md)。

@@ -4,7 +4,7 @@ weight: 60
 description: "开发阶段化物理任务：Stage 编排、Action 调用、Worker 协议与本地调试。"
 ---
 
-Robot Skill 将一个机器人任务组织为可观察、可停止、可恢复的 Stage。它通过 Action 使用 Ability，并根据 Feedback 和 Observation 推进执行。在执行链上，它位于 Pilot 之下、Ability 之上（见[第 5 章：Robot Skill、Stage 与 Action](/developer/quickstart/chapter_05_robot_skill/)）。
+Robot Skill 将一个机器人任务组织为可观察、可停止、可恢复的 Stage。它通过 Action 使用 Ability，并根据 Feedback 和 Observation 推进执行。在执行链上，它位于 Pilot 之下、Ability 之上（见[第 5 章：Robot Skill、Stage 与 Action](../../quickstart/chapter_05_robot_skill.md)）。
 
 相关仓库：
 
@@ -716,5 +716,5 @@ make test    # pytest：仓库级跨进程/契约测试 + 各 Skill 的 tests/
 
 ## 相关层次
 
-- 概念模型：[架构 · Robot 执行与具身闭环](/architecture/06-robot-execution/)
-- 实现细节：[内部实现 · Pilot 与 Robot Execution](/developer/reference/internals/robot-execution-and-environment/)
+- 概念模型：[架构 · Robot 执行与具身闭环](../../../architecture/06-robot-execution.md)
+- 实现细节：[内部实现 · Pilot 与 Robot Execution](../../reference/internals/robot-execution-and-environment.md)

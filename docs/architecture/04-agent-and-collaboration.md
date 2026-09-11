@@ -459,5 +459,5 @@ Agent 根据目标、环境和运行结果形成或调整工作。Workflow 保�
 
 ## 相关层次
 
-- 设计契约与扩展指引：[核心模块 · Agent 角色与 Team](/developer/core-modules/intelligent/agent-profile/)
-- 服务端/前端实现细节：[内部实现 · Server、Agent 与 Workflow](/developer/reference/internals/server-agent-and-workflow/)
+- 设计契约与扩展指引：[核心模块 · Agent 角色与 Team](../developer/core-modules/intelligent/agent-profile.md)
+- 服务端/前端实现细节：[内部实现 · Server、Agent 与 Workflow](../developer/reference/internals/server-agent-and-workflow.md)

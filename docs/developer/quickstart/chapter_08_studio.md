@@ -159,4 +159,4 @@ Observation 是物理执行中的结构化观测；Artifact 是执行产物，�
 
 ## 下一章
 
-进入[第九章：完整产品 Gate](/developer/quickstart/chapter_09_product_gate/)，验证整个产品链。
+进入[第九章：完整产品 Gate](chapter_09_product_gate.md)，验证整个产品链。

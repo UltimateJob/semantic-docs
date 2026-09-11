@@ -197,5 +197,5 @@ go test ./internal/workflow/... ./internal/store/... ./internal/agent/... -count
 
 ## 相关层次
 
-- 概念模型：[架构 · 任务规划与 Workflow](/architecture/05-planning-and-workflow/)、[架构 · Agent 与协作](/architecture/04-agent-and-collaboration/)
-- 设计契约：[核心模块 · Workflow 与任务编排](/developer/core-modules/orchestration/)、[核心模块 · Agent 角色与 Team](/developer/core-modules/intelligent/agent-profile/)
+- 概念模型：[架构 · 任务规划与 Workflow](../../../architecture/05-planning-and-workflow.md)、[架构 · Agent 与协作](../../../architecture/04-agent-and-collaboration.md)
+- 设计契约：[核心模块 · Workflow 与任务编排](../../core-modules/orchestration/_index.md)、[核心模块 · Agent 角色与 Team](../../core-modules/intelligent/agent-profile.md)

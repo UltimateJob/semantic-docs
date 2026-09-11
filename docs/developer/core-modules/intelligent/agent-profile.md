@@ -68,8 +68,8 @@ subagent:
 
 - `mode` 决定角色在协作中的位置：coordinator 负责任务分解，worker 执行具体工作，service 提供可复用子能力；
 - `tools.pinned` 常驻注入模型上下文；`tool_search: true` 时其余授权工具进入动态检索集，命中后才对模型可见；
-- `skills.allowlist` 是硬边界，Project 级绑定只能继续收窄（交集语义见 [Agent Skill](/developer/core-modules/intelligent/agent-skill/)）；
-- `interrupt.approval_required` 按命名空间声明需人工审批的操作，与 Tool 的 `Annotations.Risk` 配合（见 [Tool 与 MCP 接入](/developer/core-modules/intelligent/tool-and-mcp/)）。
+- `skills.allowlist` 是硬边界，Project 级绑定只能继续收窄（交集语义见 [Agent Skill](agent-skill.md)）；
+- `interrupt.approval_required` 按命名空间声明需人工审批的操作，与 Tool 的 `Annotations.Risk` 配合（见 [Tool 与 MCP 接入](tool-and-mcp.md)）。
 
 ## 入门教程：新增一个角色
 

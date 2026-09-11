@@ -36,17 +36,18 @@ The boundaries are:
 ## Recommended reading order
 
 1. [Install and Start](getting-started/install-and-start.en.md): deploy a prebuilt package or build from source.
-2. [Best Practice: From Project to Plan](getting-started/best-practice.en.md): follow a screenshot-based default workflow.
-3. [Project and Semantic Studio](workspace/project-and-studio.en.md): understand the frontend pages and panels.
-4. [Conversation, Agents, and Interactions](collaboration/conversation-agents-and-interactions.en.md): learn how to describe goals and answer Agent questions.
-5. [Plans and Workflow](workflow/planning-and-execution.en.md): review, approve, pause, resume, and stop execution.
-6. [Simulation](environments/simulation.en.md) or [Real Robots](environments/real-robot.en.md): continue with your target environment.
+2. [First Project](getting-started/first-project.en.md): open a Project, approve a plan, and observe execution results.
+3. [Best Practice: From Project to Plan](getting-started/best-practice.en.md): follow a screenshot-based default workflow.
+4. [Project and Semantic Studio](workspace/project-and-studio.en.md): understand the frontend pages and panels.
+5. [Conversation, Agents, and Interactions](collaboration/conversation-agents-and-interactions.en.md): learn how to describe goals and answer Agent questions.
+6. [Plans and Workflow](workflow/planning-and-execution.en.md): review, approve, pause, resume, and stop execution.
+7. [Simulation](environments/simulation.en.md) or [Real Robots](environments/real-robot.en.md): continue with your target environment.
 
 ## Guide structure
 
 | Section | What you will learn |
 |---|---|
-| [Getting Started](getting-started/_index.en.md) | Installation, startup, login, and the screenshot-based best practice |
+| [Getting Started](getting-started/_index.en.md) | Installation, the first Project, and the screenshot-based best practice |
 | [Workspace](workspace/_index.en.md) | Project and Semantic Studio page structure |
 | [Collaboration](collaboration/_index.en.md) | Conversation, Leader, Robot Agent, and structured Interactions |
 | [Plans & Execution](workflow/_index.en.md) | Plan Proposal, Workflow, Task, recovery, and stop |

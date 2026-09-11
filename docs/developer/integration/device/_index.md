@@ -30,11 +30,11 @@ Robot SDK Backend
 
 ## 阅读路径
 
-- 接入设备抽象：[Robot SDK](/developer/core-modules/robot/robot-sdk/)；
-- 新增原子动作：[Ability](/developer/core-modules/robot/ability/)；
-- 编排阶段化任务：[Robot Skill](/developer/core-modules/robot/robot-skill/)；
-- 设备装配和加入：[设备部署与加入](/developer/integration/device/deployment/)；
-- 跨组件接口：[组件接口与事件](/developer/integration/component-interfaces-and-events/)。
+- 接入设备抽象：[Robot SDK](../../core-modules/robot/robot-sdk.md)；
+- 新增原子动作：[Ability](../../core-modules/robot/ability.md)；
+- 编排阶段化任务：[Robot Skill](../../core-modules/robot/robot-skill.md)；
+- 设备装配和加入：[设备部署与加入](deployment.md)；
+- 跨组件接口：[组件接口与事件](../../reference/api/protocols.md)。
 
 ## 验收标准
 

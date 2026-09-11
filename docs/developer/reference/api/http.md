@@ -7,7 +7,7 @@ description: "Semantic Server 的 REST 端点清单：认证、Project、Convers
 
 本文是 Semantic Server HTTP API 的参考清单。全部端点提取自路由注册源码 `internal/server/http/router.go`（semantic-framework 仓库，下同），请求/响应字段提取自 `internal/server/http/handlers/` 与 `internal/store/` 中的结构体。端点清单与代码不一致时，以代码为准并请反馈。
 
-协议边界与组件分工的概述见[组件接口与事件](/developer/reference/api/protocols/)；WebSocket 事件通道见 [WebSocket 事件](/developer/reference/api/ws/)。
+协议边界与组件分工的概述见[组件接口与事件](protocols.md)；WebSocket 事件通道见 [WebSocket 事件](ws.md)。
 
 ## 网关与端口
 
@@ -25,7 +25,7 @@ description: "Semantic Server 的 REST 端点清单：认证、Project、Convers
 - token TTL：24 小时（`tokenTTL = 24 * time.Hour`）；过期 token 会被惰性剔除并返回 `AUTH_TOKEN_EXPIRED`；
 - 种子账号：首次启动自动创建 `admin` 用户；初始密码取环境变量 `SEMANTIC_ADMIN_PASSWORD`，未设置时为 `admin123` 并 WARN 提示修改；
 - 错误码（HTTP 401，与 `error.code` 一致）：`AUTH_INVALID_CREDENTIALS`、`AUTH_TOKEN_INVALID`、`AUTH_TOKEN_EXPIRED`、`AUTH_TOKEN_REQUIRED`；
-- Pilot 设备使用与 Pilot 实例绑定的专用 credential（经 Pilot Enrollment 换取），不复用用户 token；credential 仅用于 `/ws/pilot` 与 `/pilot/v1/transfers/*`（见 [WebSocket 事件](/developer/reference/api/ws/)的 Pilot 一节）。
+- Pilot 设备使用与 Pilot 实例绑定的专用 credential（经 Pilot Enrollment 换取），不复用用户 token；credential 仅用于 `/ws/pilot` 与 `/pilot/v1/transfers/*`（见 [WebSocket 事件](ws.md)的 Pilot 一节）。
 
 鉴权白名单（精确匹配，源码 `internal/server/auth/middleware.go` 的 `publicPaths`）：
 
@@ -455,5 +455,5 @@ Execution 响应体为 `store.RobotExecution`（`internal/store/robot.go`）：`
 
 ## 相关参考
 
-- WebSocket 事件通道与 sequence 续传：[WebSocket 事件](/developer/reference/api/ws/)；
-- 协议总览与版本边界：[接口与配置](/developer/reference/api/)、[组件接口与事件](/developer/reference/api/protocols/)。
+- WebSocket 事件通道与 sequence 续传：[WebSocket 事件](ws.md)；
+- 协议总览与版本边界：[接口与配置](_index.md)、[组件接口与事件](protocols.md)。

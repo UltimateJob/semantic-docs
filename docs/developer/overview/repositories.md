@@ -52,4 +52,4 @@ export SEMANTIC_DEPLOYMENT_REPO=$SEMANTIC/semantic-robot-deployment
 export SEMANTIC_WEB_REPO=$SEMANTIC/semantic-web
 ```
 
-完整构建和测试命令见[构建与测试](/developer/reference/build/)。
+完整构建和测试命令见[构建与测试](../reference/build/_index.md)。

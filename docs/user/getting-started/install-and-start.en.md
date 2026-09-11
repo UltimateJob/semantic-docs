@@ -222,6 +222,8 @@ python3 semantic_installer.py --list
 
 The baseline targets Linux x86_64 and is validated on Ubuntu 24.04. Downloading models is not deployment; you still need source build, Bundle activation, and Skill publication. Installing system dependencies may require sudo.
 
+The installer prepares the remaining repositories from the workspace version manifest remotes and revisions. In the TUI, press `e` to configure the workspace root `SEMANTIC`, admin password, service addresses, and mirrors. Check that the selected manifest matches the current hosting organization before you start. Public repositories use standard Git authentication; do not write personal credentials into the manifest or commit them to a repository.
+
 ### Requirements
 
 - Linux;
@@ -394,4 +396,4 @@ After install the default is the mock model. Configure real model services and t
 
 ## Next step
 
-After install and login, continue with the [Best Practice: From Project to Plan](best-practice.en.md) for a screenshot-based end-to-end flow, or read [Project and Semantic Studio](../workspace/project-and-studio.en.md) to learn the page structure.
+After install and login, continue with [First Project](first-project.en.md) for the complete flow from opening a Project to observing results. For click-by-click screenshots, see [Best Practice: From Project to Plan](best-practice.en.md). To learn the page structure, read [Project and Semantic Studio](../workspace/project-and-studio.en.md).

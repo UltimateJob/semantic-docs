@@ -141,4 +141,4 @@ go test ./tests/integration/ -count=1   # 全部集成测试均默认走 mock �
 go test ./pkg/llm/... -count=1
 ```
 
-模型产品测试（真实模型）用于验证 Agent 决策和协作；Robot 运动、接触和停止先通过无模型测试确认（见[测试策略](/developer/reference/build/testing-strategy/)）。
+模型产品测试（真实模型）用于验证 Agent 决策和协作；Robot 运动、接触和停止先通过无模型测试确认（见[测试策略](../../reference/build/testing-strategy.md)）。

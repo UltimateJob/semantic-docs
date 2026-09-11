@@ -4,7 +4,7 @@ weight: 80
 description: "接入新机器人型号：RobotBackend / Provider Protocol、Backend 实现与 Wheel 交付。"
 ---
 
-Robot SDK 向 Ability 提供类型化的机器人控制、状态、运动规划和传感接口。它位于执行链的最底端（见[第六章：Ability、Handler 与 Robot SDK](/developer/quickstart/chapter_06_ability_sdk/)）：Ability 通过 Wheel 依赖 SDK，SDK 的 Backend 连接设备控制器或仿真 Runtime。
+Robot SDK 向 Ability 提供类型化的机器人控制、状态、运动规划和传感接口。它位于执行链的最底端（见[第六章：Ability、Handler 与 Robot SDK](../../quickstart/chapter_06_ability_sdk.md)）：Ability 通过 Wheel 依赖 SDK，SDK 的 Backend 连接设备控制器或仿真 Runtime。
 
 仓库：`semantic-robotsdk/robot-sdk/`，使用 **uv workspace** 管理（`[tool.uv.workspace]`，这是整个工作区中唯一的 workspace 机制）。
 
@@ -49,7 +49,7 @@ Provider 在 SDK 层实现算法，Backend 负责与设备或仿真 Runtime 传�
 
 ## SDK 的职责边界
 
-SDK 保持机器人能力表达，**不保存** Workflow、Task、Semantic Map 或 Robot Skill 业务状态——那些属于链路上游（见执行链）。Skill 也不允许直接 import SDK（见 [Robot Skill](/developer/core-modules/robot/robot-skill/)），所有物理调用必须经过 Ability。
+SDK 保持机器人能力表达，**不保存** Workflow、Task、Semantic Map 或 Robot Skill 业务状态——那些属于链路上游（见执行链）。Skill 也不允许直接 import SDK（见 [Robot Skill](robot-skill.md)），所有物理调用必须经过 Ability。
 
 ## 入门教程：接入新 Robot 型号
 

@@ -81,6 +81,6 @@ Ability 使用 Robot SDK 的类型化 Python API。Robot 包将调用转换为�
 
 ## 相关参考
 
-- 端点与事件明细：[HTTP API](/developer/reference/api/http/)、[WebSocket 事件](/developer/reference/api/ws/)；
-- 把这些接口串成完整链路的联调路径：[端到端集成](/developer/integration/end-to-end/)；
-- 可运行的参考实现：[Cookbook](/developer/cookbook/)。
+- 端点与事件明细：[HTTP API](http.md)、[WebSocket 事件](ws.md)；
+- 把这些接口串成完整链路的联调路径：[端到端集成](../../integration/end-to-end/_index.md)；
+- 可运行的参考实现：[Cookbook](../../cookbook/_index.md)。

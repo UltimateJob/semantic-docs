@@ -131,4 +131,4 @@ description: "使用默认 R1 Pro 拆码垛场景，按截图完成从打开 Pro
 - 执行过程中同时看 Physics Viewer、底部过程和日志，不要只看最终消息。
 - 当 Runtime、模型或设备异常时，先切换到底部“问题”和“日志”页定位，再检查系统设置。
 
-下一步可以阅读[Project 与 Semantic Studio](../workspace/project-and-studio.md)，系统了解前端每个页面和面板的作用。
+批准计划并观察执行结果，见[第一个 Project](first-project.md)。下一步也可以阅读[Project 与 Semantic Studio](../workspace/project-and-studio.md)，系统了解前端每个页面和面板的作用。

@@ -5,7 +5,7 @@ weight: 40
 description: "Semantic 的核心抽象：智能能力、任务编排、机器人能力、环境运行、Studio 和开发工具链。"
 ---
 
-核心模块说明 Semantic 提供了哪些可复用抽象，以及这些抽象如何组合成具身应用。这里讲**框架能力和设计边界**，具体型号、具体制品和现成项目进入[组件集成](/developer/integration/)或[Cookbook](/developer/cookbook/)。
+核心模块说明 Semantic 提供了哪些可复用抽象，以及这些抽象如何组合成具身应用。这里讲**框架能力和设计边界**，具体型号、具体制品和现成项目进入[组件集成](../integration/_index.md)或[Cookbook](../cookbook/_index.md)。
 
 ## 核心模块地图
 
@@ -31,44 +31,44 @@ Studio 与开发工具链横向服务以上所有模块
 
 Agent 如何理解目标、获得知识并使用外部能力。
 
-- [Agent Skill](/developer/core-modules/intelligent/agent-skill/)：用 `SKILL.md` 提供领域知识和工作方法；
-- [Tool 与 MCP 接入](/developer/core-modules/intelligent/tool-and-mcp/)：让 Agent 查询或操作外部系统；
-- [Model Provider](/developer/core-modules/intelligent/model-provider/)：配置模型服务和运行参数；
-- [Agent 角色与 Team](/developer/core-modules/intelligent/agent-profile/)：定义角色、权限和协作关系。
+- [Agent Skill](intelligent/agent-skill.md)：用 `SKILL.md` 提供领域知识和工作方法；
+- [Tool 与 MCP 接入](intelligent/tool-and-mcp.md)：让 Agent 查询或操作外部系统；
+- [Model Provider](intelligent/model-provider.md)：配置模型服务和运行参数；
+- [Agent 角色与 Team](intelligent/agent-profile.md)：定义角色、权限和协作关系。
 
 ### Workflow 与任务编排
 
 已经理解的目标如何变成可持续推进的工作。
 
-- [Workflow 与任务编排](/developer/core-modules/orchestration/)：Plan Proposal、Workflow、Task、SubTask、依赖、资源、暂停、恢复和停止。
+- [Workflow 与任务编排](orchestration/_index.md)：Plan Proposal、Workflow、Task、SubTask、依赖、资源、暂停、恢复和停止。
 
 ### Robot 能力
 
 任务如何变成阶段化动作，并最终落到设备。
 
-- [Robot Skill](/developer/core-modules/robot/robot-skill/)：编排 Stage、checkpoint、Action、Feedback 和 Observation；
-- [Ability](/developer/core-modules/robot/ability/)：通过 Manifest 和 Handler 实现原子 Action；
-- [Robot SDK 与新型号接入](/developer/core-modules/robot/robot-sdk/)：通过 Backend 和 Protocol 接入设备。
+- [Robot Skill](robot/robot-skill.md)：编排 Stage、checkpoint、Action、Feedback 和 Observation；
+- [Ability](robot/ability.md)：通过 Manifest 和 Handler 实现原子 Action；
+- [Robot SDK 与新型号接入](robot/robot-sdk.md)：通过 Backend 和 Protocol 接入设备。
 
 ### Environment 与 Runtime
 
 机器人在哪个世界运行，以及仿真与真实设备如何保持同构。
 
-- [Scene Package 与仿真 Runtime](/developer/core-modules/environment/scene-and-runtime/)：Scene、Layout、Runtime Profile 和 Virtual Robot。
+- [Scene Package 与仿真 Runtime](environment/scene-and-runtime.md)：Scene、Layout、Runtime Profile 和 Virtual Robot。
 
 ### Studio 与交互
 
 人如何观察状态、处理 Interaction 并介入长时间执行。
 
-- [Studio 面板与交互渲染器](/developer/core-modules/interface/studio-panel/)：Panel、Renderer、Store、Dock 和事件订阅；
-- [Studio 前端架构](/developer/reference/internals/semantic-studio/)：前端状态来源、REST、WebSocket 和重连。
+- [Studio 面板与交互渲染器](interface/studio-panel.md)：Panel、Renderer、Store、Dock 和事件订阅；
+- [Studio 前端架构](../reference/internals/semantic-studio.md)：前端状态来源、REST、WebSocket 和重连。
 
 ### 开发工具链
 
 如何构建、测试、装配和验证 Semantic，而不是运行时执行链的一部分。
 
-- [开发工具链](/developer/core-modules/toolchain/)：quick-start、构建测试、Runtime Pack、Robot Bundle 和 Product Gate；
-- [构建与测试](/developer/reference/build/)：各仓库命令和测试范围。
+- [开发工具链](toolchain/_index.md)：quick-start、构建测试、Runtime Pack、Robot Bundle 和 Product Gate；
+- [构建与测试](../reference/build/_index.md)：各仓库命令和测试范围。
 
 ## 怎么选择模块
 
@@ -95,4 +95,4 @@ Agent 如何理解目标、获得知识并使用外部能力。
 
 ## 推荐学习顺序
 
-先读[快速开始](/developer/quickstart/)，再按目标进入对应模块。若需要理解整体对象关系，阅读[概述中的核心对象](/developer/overview/concepts/)；若需要修改跨模块行为，阅读[端到端集成](/developer/integration/end-to-end/)。
+先读[快速开始](../quickstart/_index.md)，再按目标进入对应模块。若需要理解整体对象关系，阅读[概述中的核心对象](../overview/concepts.md)；若需要修改跨模块行为，阅读[端到端集成](../integration/end-to-end/_index.md)。

@@ -33,17 +33,17 @@ Agent → Workflow → Pilot → Robot Skill → Ability → Robot SDK
 
 | 目标 | 推荐入口 |
 |---|---|
-| 想从零构建一个可运行系统 | [快速开始](/developer/quickstart/) |
-| 想理解抽象和扩展点 | [核心模块](/developer/core-modules/) |
-| 想找真实代码和配置 | [Cookbook](/developer/cookbook/) |
-| 想接入具体模型、设备或 Runtime | [组件集成](/developer/integration/) |
-| 想查命令、协议或内部机制 | [参考](/developer/reference/) |
-| 想升级版本或处理迁移 | [发布记录与迁移](/developer/releases/) |
-| 遇到具体报错 | [FAQ](/developer/faq/) |
+| 想从零构建一个可运行系统 | [快速开始](../quickstart/_index.md) |
+| 想理解抽象和扩展点 | [核心模块](../core-modules/_index.md) |
+| 想找真实代码和配置 | [Cookbook](../cookbook/_index.md) |
+| 想接入具体模型、设备或 Runtime | [组件集成](../integration/_index.md) |
+| 想查命令、协议或内部机制 | [参考](../reference/_index.md) |
+| 想升级版本或处理迁移 | [发布记录与迁移](../../releases/_index.md) |
+| 遇到具体报错 | [FAQ](../faq/_index.md) |
 
 ## 继续阅读
 
-- [Semantic 的核心对象与关系](/developer/overview/concepts/)；
-- [系统架构与一次任务的生命周期](/developer/overview/architecture/)；
-- [仓库、制品与版本边界](/developer/overview/repositories/)；
-- [快速开始](/developer/quickstart/)。
+- [Semantic 的核心对象与关系](concepts.md)；
+- [系统架构与一次任务的生命周期](architecture.md)；
+- [仓库、制品与版本边界](repositories.md)；
+- [快速开始](../quickstart/_index.md)。

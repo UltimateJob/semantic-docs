@@ -1,18 +1,47 @@
+{{/* Hugo strings.TrimSuffix 参数顺序是 SUFFIX STRING，与 Go 相反。 */ -}}
 {{ $destination := .Destination -}}
-{{ $path := $destination -}}
+{{ $linkPath := $destination -}}
 {{ $anchor := "" -}}
-{{ if in $path "#" -}}
-  {{ $parts := split $path "#" -}}
-  {{ $path = index $parts 0 -}}
+{{ if in $linkPath "#" -}}
+  {{ $parts := split $linkPath "#" -}}
+  {{ $linkPath = index $parts 0 -}}
   {{ $anchor = printf "#%s" (index $parts 1) -}}
 {{ end -}}
 {{ $external := or (hasPrefix $destination "http://") (hasPrefix $destination "https://") (hasPrefix $destination "mailto:") (hasPrefix $destination "tel:") -}}
-{{ if and (not $external) (hasSuffix $path ".md") -}}
-  {{ $ref := strings.TrimSuffix ".md" $path -}}
-  {{ $ref = strings.TrimSuffix ".en" $ref -}}
-  {{ $ref = strings.TrimSuffix "/_index" $ref -}}
-  {{ $ref = strings.TrimSuffix "_index" $ref -}}
-  <a href="{{ relref .Page $ref }}{{ $anchor }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{ if and (not $external) (hasSuffix $linkPath ".md") -}}
+  {{ $sourceDir := "" -}}
+  {{ with .Page.File }}{{ $sourceDir = .Dir }}{{ end -}}
+  {{ if or (eq $sourceDir "/") (eq $sourceDir ".") }}{{ $sourceDir = "" }}{{ end -}}
+  {{ $joined := $linkPath -}}
+  {{ if $sourceDir }}{{ $joined = path.Clean (path.Join $sourceDir $linkPath) }}{{ end -}}
+  {{ $logical := strings.TrimSuffix ".md" $joined -}}
+  {{ $logical = strings.TrimSuffix ".en" $logical -}}
+  {{ $logical = strings.TrimSuffix "/_index" $logical -}}
+  {{ if or (eq $logical ".") (eq $logical "/") (eq $logical "") (eq $logical "_index") }}{{ $logical = "" }}{{ end -}}
+  {{ $absPath := "" -}}
+  {{ if $logical }}{{ $absPath = printf "/%s" (strings.TrimPrefix "/" $logical) }}{{ end -}}
+  {{ $relative := strings.TrimSuffix ".md" $linkPath -}}
+  {{ $relative = strings.TrimSuffix ".en" $relative -}}
+  {{ $relative = strings.TrimSuffix "/_index" $relative -}}
+  {{ $resolved := "" -}}
+  {{ if $relative -}}
+    {{ with .Page.GetPage $relative }}{{ $resolved = . }}{{ end -}}
+  {{ end -}}
+  {{ if and (not $resolved) $absPath -}}
+    {{ with .Page.GetPage $absPath }}{{ $resolved = . }}{{ end -}}
+    {{ if not $resolved -}}
+      {{ range site.Sites -}}
+        {{ if not $resolved -}}
+          {{ with .GetPage $absPath }}{{ $resolved = . }}{{ end -}}
+        {{ end -}}
+      {{ end -}}
+    {{ end -}}
+  {{ end -}}
+  {{ if $resolved -}}
+    <a href="{{ $resolved.RelPermalink }}{{ $anchor }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+  {{- else -}}
+    <a href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+  {{- end -}}
 {{- else -}}
   <a href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
 {{- end }}

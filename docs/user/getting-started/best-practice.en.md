@@ -131,4 +131,4 @@ After the flow above, continue exploring:
 - Watch Physics Viewer, bottom process, and logs together during execution, not just the final message.
 - When Runtime, model, or device misbehaves, open the bottom Issues and Logs tabs first, then check system settings.
 
-Next, read [Project and Semantic Studio](../workspace/project-and-studio.en.md) to understand each page and panel in detail.
+To approve the plan and observe execution results, continue with [First Project](first-project.en.md). You can also read [Project and Semantic Studio](../workspace/project-and-studio.en.md) to understand each page and panel in detail.

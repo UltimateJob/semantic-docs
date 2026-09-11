@@ -443,5 +443,5 @@ Workflow 评估依赖和资源，选择当前可以推进的工作，建立 Agen
 
 ## 相关层次
 
-- 设计契约与扩展指引：[核心模块 · Workflow 与任务编排](/developer/core-modules/orchestration/)
-- 服务端/前端实现细节：[内部实现 · Server、Agent 与 Workflow](/developer/reference/internals/server-agent-and-workflow/)
+- 设计契约与扩展指引：[核心模块 · Workflow 与任务编排](../developer/core-modules/orchestration/_index.md)
+- 服务端/前端实现细节：[内部实现 · Server、Agent 与 Workflow](../developer/reference/internals/server-agent-and-workflow.md)

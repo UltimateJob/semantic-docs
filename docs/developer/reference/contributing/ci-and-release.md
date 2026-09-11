@@ -41,4 +41,4 @@ Semantic 由多个独立仓库组成。以下为跨仓协作与发布原则，�
 - 记录 revision、制品哈希、兼容平台、迁移说明和实际验证结果。
 - 发布后验证安装入口与版本清单，不覆盖不可变版本制品。
 
-具体命令见 [构建、运行与测试](/developer/reference/build-run-and-test/)，贡献要求见 [贡献指南](/developer/reference/contributing/)。
+具体命令见 [构建、运行与测试](../build/build-run-and-test.md)，贡献要求见 [贡献指南](_index.md)。

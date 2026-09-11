@@ -5,7 +5,7 @@ weight: 20
 
 A real Robot connects to Semantic through a Robot type package, RobotDeployment, Pilot, AbilityFramework, Abilities, and Robot SDK.
 
-> **No R1 Pro?** You can still use environments, Agent collaboration, Workflow, and Skill debugging in simulation. The simulated Robot uses the same execution chain as a physical Robot. See [Simulation](simulation.en.md) and the [Best Practice](../getting-started/best-practice.en.md).
+> **No R1 Pro?** You can still use environments, Agent collaboration, Workflow, and Skill debugging in simulation. The simulated Robot uses the same execution chain as a physical Robot. See [Simulation](simulation.en.md), [First Project](../getting-started/first-project.en.md), and the [Best Practice](../getting-started/best-practice.en.md).
 
 ![Robot instance overview](../../../static/images/user/getting-started/robot-device-overview.png)
 

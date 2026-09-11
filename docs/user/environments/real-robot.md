@@ -5,7 +5,7 @@ weight: 20
 
 真实 Robot 通过 Robot 类型包、RobotDeployment、Pilot、AbilityFramework、Ability 和 Robot SDK 接入 Semantic。
 
-> **没有 R1 Pro？** Semantic 的全部功能（环境、Agent 协作、Workflow、Skill 调试）都可以先在仿真中体验：MuJoCo 场景中的虚拟 Robot 使用与真机完全相同的执行链，见[仿真环境](simulation.md)和[最佳实践](../getting-started/best-practice.md)。仓库另提供 `r1pro-fake` 类型包，用于不依赖任何物理环境的设备链路验证。
+> **没有 R1 Pro？** Semantic 的全部功能（环境、Agent 协作、Workflow、Skill 调试）都可以先在仿真中体验：MuJoCo 场景中的虚拟 Robot 使用与真机完全相同的执行链，见[仿真环境](simulation.md)、[第一个 Project](../getting-started/first-project.md)和[最佳实践](../getting-started/best-practice.md)。仓库另提供 `r1pro-fake` 类型包，用于不依赖任何物理环境的设备链路验证。
 
 ![Robot 实例概览](../../../static/images/user/getting-started/robot-device-overview.png)
 

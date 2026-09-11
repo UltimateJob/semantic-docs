@@ -13,7 +13,7 @@ description: "管理 Scene 资产、仿真 Runtime、Runtime Installation 和虚
 
 | 模块 | 解决的问题 | 典型产物 |
 |---|---|---|
-| [Scene Package 与仿真 Runtime](/developer/core-modules/environment/scene-and-runtime/) | Scene、Layout、Runtime 和虚拟 Robot | Scene 资产、Runtime Pack、Runtime Installation |
+| [Scene Package 与仿真 Runtime](scene-and-runtime.md) | Scene、Layout、Runtime 和虚拟 Robot | Scene 资产、Runtime Pack、Runtime Installation |
 
 ## 代码位置
 
@@ -115,8 +115,8 @@ semantic-server
 - 新增测试场景或布局：新增 Scene Package；
 - 修改 Runtime 行为：修改 Runtime 代码和契约测试；
 - 接入新的 Runtime Profile：新增 profile 和安装入口；
-- 接入真机设备：进入 [Robot SDK](/developer/core-modules/robot/robot-sdk/) 和 [设备集成](/developer/integration/device/)；
-- 在 Studio 中观察环境：进入 [Studio 与交互](/developer/core-modules/interface/)。
+- 接入真机设备：进入 [Robot SDK](../robot/robot-sdk.md) 和 [设备集成](../../integration/device/_index.md)；
+- 在 Studio 中观察环境：进入 [Studio 与交互](../interface/_index.md)。
 
 ## 测试
 
@@ -141,6 +141,6 @@ make test-native
 
 ## 深入阅读
 
-- [Scene Package 与仿真 Runtime](/developer/core-modules/environment/scene-and-runtime/)；
-- [第二章：Runtime、Scene 与 Virtual Robot](/developer/quickstart/chapter_02_simulation/)；
-- [仿真集成](/developer/integration/simulation/)。
+- [Scene Package 与仿真 Runtime](scene-and-runtime.md)；
+- [第二章：Runtime、Scene 与 Virtual Robot](../../quickstart/chapter_02_simulation.md)；
+- [仿真集成](../../integration/simulation/_index.md)。

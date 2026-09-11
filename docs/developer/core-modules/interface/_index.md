@@ -13,8 +13,8 @@ Studio 是 Server 的 Web 前端，不直接连接 Pilot、AbilityFramework、Ro
 
 | 模块 | 解决的问题 | 典型产物 |
 |---|---|---|
-| [Studio 面板与交互渲染器](/developer/core-modules/interface/studio-panel/) | 给 Studio 增加观察或交互能力 | Vue 组件、注册表条目 |
-| [Studio 前端架构](/developer/reference/internals/semantic-studio/) | 前端状态、API、Store、WS 和恢复机制 | Store、dispatcher、bootstrap |
+| [Studio 面板与交互渲染器](studio-panel.md) | 给 Studio 增加观察或交互能力 | Vue 组件、注册表条目 |
+| [Studio 前端架构](../../reference/internals/semantic-studio.md) | 前端状态、API、Store、WS 和恢复机制 | Store、dispatcher、bootstrap |
 
 ## 代码位置
 
@@ -143,6 +143,6 @@ npm run test:framework:v050
 
 ## 深入阅读
 
-- [Studio 面板与交互渲染器](/developer/core-modules/interface/studio-panel/)；
-- [Studio 前端架构](/developer/reference/internals/semantic-studio/)；
-- [第八章：Studio、事件流与执行观察](/developer/quickstart/chapter_08_studio/)。
+- [Studio 面板与交互渲染器](studio-panel.md)；
+- [Studio 前端架构](../../reference/internals/semantic-studio.md)；
+- [第八章：Studio、事件流与执行观察](../../quickstart/chapter_08_studio.md)。

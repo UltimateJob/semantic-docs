@@ -7,7 +7,7 @@ description: "RobotDeployment 字段参考：类型包、RobotInstance 与 robot
 
 RobotDeployment 是一台 Robot 的部署配置事实（`robot-deployment.yaml`，`api_version: 1`）：Pilot、Ability 与 Robot SDK 共用这一份文件，Ability 不再逐个保存 Robot endpoint。它由语义框架在运行时消费（`semantic-framework/internal/pilot/discovery.go` 的 `RobotDeployment`），也由实例启动器严格解析（`semantic-robot-deployment/internal/instance/start.go`）。
 
-在体系中的位置：**类型包（RobotRuntimeBundle）提供模板与制品 → RobotInstance 配置声明单台 Robot 的差异项 → 渲染（render）产出实例目录**，实例目录中的 `robot-deployment.yaml` 即本文所述的 RobotDeployment。Robot SDK 如何消费其中的 endpoint、profile 与安全限制见 [Robot SDK](/developer/core-modules/robot/robot-sdk/)；从加入码到设备上线的完整流程见[设备部署](/developer/integration/device/deployment/)。
+在体系中的位置：**类型包（RobotRuntimeBundle）提供模板与制品 → RobotInstance 配置声明单台 Robot 的差异项 → 渲染（render）产出实例目录**，实例目录中的 `robot-deployment.yaml` 即本文所述的 RobotDeployment。Robot SDK 如何消费其中的 endpoint、profile 与安全限制见 [Robot SDK](../../core-modules/robot/robot-sdk.md)；从加入码到设备上线的完整流程见[设备部署](../../integration/device/deployment.md)。
 
 ## 三个配置对象
 
@@ -243,4 +243,4 @@ robot_skills:                        # 期望状态：Server 按 Registry 下发
 
 - 结构校验：`render`/`start` 解析失败即报错（未知字段、必填缺失、URL/组合校验），无需启动进程；
 - 状态查询：`semantic-robot-instance status --instance <目录>` 输出 `state.json` 的 JSON，supervisor 进程已退出而状态未收口时标记 `failed`；
-- Server 侧核对：设备工作台的"配置"视图来自 `RobotDeployment.DeviceConfiguration()`（endpoint、profile、providers、坐标系、工具与安全上限），见 [WebSocket 事件](/developer/reference/api/ws/)的设备通道。
+- Server 侧核对：设备工作台的"配置"视图来自 `RobotDeployment.DeviceConfiguration()`（endpoint、profile、providers、坐标系、工具与安全上限），见 [WebSocket 事件](ws.md)的设备通道。

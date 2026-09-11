@@ -49,3 +49,12 @@ Semantic keeps user goals, environment understanding, multi-Agent collaboration,
 </div>
 
 {{% /blocks/section %}}
+
+## Read in the repository
+
+On GitHub or GitLab source pages, use these relative paths:
+
+- [Architecture](architecture/_index.en.md)
+- [User Guide](user/_index.en.md)
+- [Developer Guide](developer/_index.en.md)
+- [Releases](releases/_index.en.md)

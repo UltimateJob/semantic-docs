@@ -38,4 +38,4 @@ Workflow、Task、SubTask、Robot Execution、Pilot 和 Web 应反映同一运�
 
 ## 参考入口
 
-各仓库命令见[构建、运行与测试](/developer/reference/build/build-run-and-test/)；跨组件验证见[端到端集成](/developer/integration/end-to-end/)。
+各仓库命令见[构建、运行与测试](build-run-and-test.md)；跨组件验证见[端到端集成](../../integration/end-to-end/_index.md)。

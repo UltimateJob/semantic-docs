@@ -7,7 +7,7 @@ description: "semantic-server.yaml 字段参考：配置加载链、密钥边界
 
 本文是 Semantic Server 配置文件 `semantic-server.yaml` 的事实参考。全部字段提取自 semantic-framework 仓库（下同）的 `pkg/config/config.go`（`Config` 结构体与代码默认值）和 `configs/semantic-server.yaml`（全仓唯一内置模板，与 `Default()` 互为同一事实源的两个视图）。字段与代码不一致时，以代码为准并请反馈。
 
-Robot 实例侧的部署配置（`robot-deployment.yaml`）不在此文件中，见 [RobotDeployment](/developer/reference/api/deployment/)。
+Robot 实例侧的部署配置（`robot-deployment.yaml`）不在此文件中，见 [RobotDeployment](deployment.md)。
 
 ## 配置加载方式
 
@@ -44,7 +44,7 @@ Robot 实例侧的部署配置（`robot-deployment.yaml`）不在此文件中，
   3. 同一 `base_url` 的兄弟端点的 env（按名称序取第一个已设置的）；
   4. 服务端托管密钥库（前端"系统设置"写入，REST 见 `/api/v1/settings/keys/*`，值始终掩码，先 service 名后端点名）。
   解析结果按端点名缓存；配置热重载或托管密钥写入后缓存清空重读。无 key 时仅 `mock` 端点可用，服务不阻塞启动。
-- **管理员种子密码**取环境变量 `SEMANTIC_ADMIN_PASSWORD`，未设置时为 `admin123` 并 WARN 提示修改（见 [HTTP API](/developer/reference/api/http/) 认证一节）。
+- **管理员种子密码**取环境变量 `SEMANTIC_ADMIN_PASSWORD`，未设置时为 `admin123` 并 WARN 提示修改（见 [HTTP API](http.md) 认证一节）。
 - **MCP stdio 子进程**的密钥建议经 `.env` 注入子进程环境（模板 `mcp_servers` 段注释）。
 - `.env` 热重载与审计日志只记录键名，绝不记录值（`pkg/config/dotenv.go`、`pkg/config/reload.go`）。
 
@@ -218,4 +218,4 @@ Server 内置配置热重载（`pkg/config/reload.go`，装配在 `internal/boot
 
 - 结构校验：`semantic doctor -c <配置路径>` 对安装副本运行 CLI 自检（`cmd/semantic/doctor.go`，`make doctor`）；
 - 启动确认：`semantic-server` 启动日志输出"配置加载完成"及解析后的 `path`、`http_addr`、`ws_addr`、`log_level`、`store_driver`（`cmd/semantic-server/main.go`）；
-- 在线查看生效快照：`GET /api/v1/settings`（敏感值掩码），修改走 `PATCH /api/v1/settings`，见 [HTTP API](/developer/reference/api/http/) 设置域一节。
+- 在线查看生效快照：`GET /api/v1/settings`（敏感值掩码），修改走 `PATCH /api/v1/settings`，见 [HTTP API](http.md) 设置域一节。
