@@ -47,3 +47,7 @@ Hugo 下载失败时，先检查 postinstall 日志与代理配置；不要未�
 ## 许可证
 
 Copyright 2026 InsightOS。自有代码采用 [Apache-2.0](LICENSE)；第三方组件与资产请查看 [NOTICE](NOTICE) 和[许可范围](LICENSE_SCOPE.md)。
+
+## 三个平台的构建复现
+
+参见 [glibc、musl 与 macOS 构建说明](README.build.md)：包含已锁定的源码版本、实际脚本入口、工具要求、本地与 CI 指令、产物位置和平台验证范围。
